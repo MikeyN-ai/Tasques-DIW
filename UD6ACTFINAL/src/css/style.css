@@ -1,0 +1,495 @@
+/* CSS General */
+
+* {
+    font-family: Ubuntu, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.centrar_elements {
+    display: flex;
+    align-items: center;
+}
+
+/* Part del header */
+
+.header, .logo, .logo_text, .logo_titol, .menu_nav {
+    height: 50px;
+}
+
+.header {
+    background-color: #151617;
+}
+
+.logo_text {
+    width: 132px;
+}
+
+.logo {
+    margin: auto;
+    float: left;
+}
+
+.logo img {
+    width: 35px;
+}
+
+.logo_titol {
+    float: right;
+    color: white;
+    font-weight: bold;
+}
+
+.menu_nav {
+    width: 561px;
+    float: right;
+}
+
+.menu_nav a {
+    font-size: 0.85em;
+    font-weight: 900;
+    color: white;
+    margin-right: 66px;
+    text-decoration: none;
+    float: left;
+}
+
+.taronja_link:hover {
+    color:#fb7936;
+}
+
+/* Politica de cookies */
+
+.politica_cookies {
+    bottom: 20px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+
+.politica {
+    width: 440px;
+    height: 76px;
+    margin-right: 43px; 
+    background-color: #ffffff;
+    border-radius: 40px;
+    display: flex;
+    border: 1px rgb(215, 215, 215) solid;
+}
+
+.politica_contingut {
+    width: 385px;
+    height: 72px;
+    font-size: 0.82em;
+    line-height: 20px;
+    padding-left: 22px;
+    margin-top: -4px;
+}
+
+.politica_imatge {
+    width: 55px;
+}
+
+.politica_imatge img {
+    padding-top: 28px;
+    margin-left: 9px;
+    width: 11px;
+    opacity: 0.5;
+}
+
+.politica_imatge img:hover {
+    opacity: 1;
+}
+
+/* Primera part */
+
+.primera_part {
+    width: 100%;
+    height: 985px;
+    background-image: radial-gradient( 80vw circle at 50% 10%, #3a2099 17%, #480c59 100% );
+    position: absolute;
+    z-index: 1;
+}
+
+.fons {
+    width: 100%;
+    height: 425px;
+    z-index: 2;
+    top: 14px;
+    background-image: url("../img/confeti.svg");
+    position: absolute;
+}
+
+.centrar_text {
+    text-align: center;
+    margin: auto;
+}
+
+#titol_divertit {
+    color: white;
+    margin-top: 129px;
+    font-size: 4em;
+    font-weight: 400;
+    margin-right: 30px;
+}
+
+#subtitol_divertit {
+    margin: auto;
+    color: white;
+    opacity: 0.7;
+    font-size: 1.6em;
+    width: 850px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-top: -32px;
+    padding-right: 35px;
+    word-spacing: 0.032em;
+}
+
+/* Caixes de plugins i assistencia */
+
+.caixa {
+    color: white;
+    width: 540px;
+    height: 337px;
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.plugins {
+    float: right;
+    margin-right: 15px;
+    background-image: linear-gradient( 153deg, #e64c4c 0%, #fb8332 95%);
+}
+
+.assistencia {
+   float: left;
+   margin-left: -15px;
+   background-image: linear-gradient(153deg, #da6bf8 0%, #815eff 95%);
+}
+
+.assistencia p , .plugins p {
+    opacity: 0.8;
+}
+
+.assistencia:hover p, .plugins:hover p{
+    opacity: 1;
+}
+
+.img_caixa {
+    width: 97px;
+    height: 337px;
+    float: left;
+}
+
+.img_caixa img {
+    width: 48px;
+    margin-right: 13px;
+    margin-top: 58px;
+    float: right;
+}
+
+.contingut {
+    width:  auto;
+}
+
+.titol_contingut {
+    font-weight: normal;
+    font-size: 2.5em;
+    margin-top: 57px;
+    letter-spacing: 0.022em;
+}
+
+.inf_contingut {
+    width: 520px;
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 24px;
+    margin-top: -7px;
+}
+
+.inf_document {
+    font-weight: bold;
+    font-size: 0.86em;
+    margin-top: 36px;
+}
+
+/* Apartat en 3 columnes */
+
+.opcions_main {
+    width: 375px;
+    height: 205px;
+    margin-left: -16px;
+    padding-right: 20px;
+}
+
+.opcions_main:hover {
+    opacity: 0.7;
+}
+
+.agrupar_elements {
+    width: 1150px;
+    height: 205px;
+    margin: 26px auto;
+}
+
+.imatge_main {
+    display: flex;
+    justify-content: center;
+}
+
+.imatge_main img {
+    width: 50px;
+    margin-top: 14px;
+}
+
+.contingut_main {
+    width: 100%;
+    height: 50px;
+    font-weight: 200;
+    color: white;
+}
+
+.contingut_main_titol {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    margin-top: 20px;
+    letter-spacing: -0.01em;
+}
+
+.contingut_main_text {
+    margin-top: -2px;
+    width: 325px;
+    height: 70px;
+    line-height: 22px;
+    letter-spacing: -0.025em;
+}
+
+.contingut_main_titol img {
+    width: 18px;
+    height: 18px;
+    margin-left: 5px; 
+}
+
+.ruta {
+    font-family: Source Code Pro;
+    background-color: #310a45;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+.contingut_text_secundari {
+    opacity: 0.7;
+}
+
+/* Apartat de arranquem */
+
+.segona_part {
+    margin: auto;
+    width: 780px;
+    height: 1150px;
+    font-size: 2em;
+}
+
+#arranquem {
+    font-size: 1.3em;
+    margin-top: 130px;
+    letter-spacing: 0.008em;
+    padding-right: 30px;
+}
+
+#arranquem-subtitol {
+    font-size: 0.81em;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.text_normal {
+    font-size: 0.5em;
+}
+
+.maquetem_part1 {
+    margin-top: -10px;
+    padding-right: 30px;
+    padding-left: 9px;
+    line-height: 28px;
+    word-spacing: 0.1em;
+}
+
+.llista {
+    margin-top: -15px;
+    margin-left: 10px;
+    line-height: 1.7em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.remarcat {
+    font-size: 0.8em;
+    font-family: "Source Code Pro";
+    background-color: #b2b2b2;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+}
+
+#new_file {
+    margin-top: 20px;
+}
+
+.block_informatiu {
+    width: 730px;
+    margin-left: 10px;
+    border: 1px solid #e8e9e9;
+}
+
+.block_gris {
+    height: 180px;
+    margin-top:28px;
+    background-color: #f6f7f8;
+}
+
+.code-block {
+    font-size: 0.473em;
+    margin-top: 2px;
+    margin-left: -23em;
+    line-height: 18.4px;
+}
+
+.code-block code {
+    font-family: Source Code Pro;
+}
+
+.groc {
+    color: #c79409;
+}
+
+.roig {
+    color: #e64c4c;
+}
+
+.taronja {
+    font-weight: 400;
+    color:#fb7936;
+}
+
+.taronja:hover {
+    color:#ffa070;   
+}
+
+/* Apartat de publicar la web */
+
+#publicar_web {
+    font-size: 0.81em;
+    margin-top: 72px;
+    margin-left: 10px;
+}
+
+.publicar_web_text {
+    margin-top: -8px;
+    margin-left: 10px;
+    word-spacing: 0.14em;
+    line-height: 27px;
+}
+
+.block_blanc {
+    font-size: 0.4em;
+    height: 60px;
+    background-color: #ffffff;
+    margin-top: 51px;
+}
+
+.block_blanc p {
+    margin-top: 22px;;
+    margin-left: 15px;
+    word-spacing: 0.05em;
+}
+
+/* Apartat negre */
+
+.penultim_apartat {
+    margin-left: -30px;
+    width: auto;
+    height: 395px;
+    background-color: #151617;
+    color: white;
+}
+
+.titol_penultim_apartat {
+    font-size: 2.62em;
+    width: 600px;
+    padding-top: 65px;
+}
+
+.contingut_penultim_apartat {
+    font-size: 1.62em;
+    margin-top: 28px;
+    line-height: 36px;
+    padding-left: 205px;
+    padding-right: 205px;
+}
+
+.gris {
+    color: #c4c4c4
+}
+
+/* Apartat final */
+
+#estem {
+    font-size: 2.6em;
+    margin-top: 113px;
+    margin-bottom: -8px;
+    word-spacing: 2px;
+    padding-right: 30px;
+}
+
+.lletra_final {
+    color: black;
+    font-weight: normal;
+}
+
+.desplazar_part_final {
+    padding-right: 52px;
+}
+
+/* Footer */
+
+.footer {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.footer_esquerra {
+    display: flex;
+    align-items: center;
+    font-size: 0.75em;
+    padding-left: 15px;
+    color: #696969;
+    height: 50px;
+}
+
+.footer_dreta {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.footer_dreta a {
+    color: black;
+}

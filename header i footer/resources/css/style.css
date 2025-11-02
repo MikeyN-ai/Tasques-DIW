@@ -1,0 +1,196 @@
+* {
+    font-family: "Inter";
+    color: black;
+    text-decoration: none;
+}
+
+.header {
+    border-bottom: 1px solid black;
+}
+
+.alinear_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 90px;
+    margin-top: 18px;
+    margin-bottom: 17px;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    padding-right: 38px;
+}
+
+#nav li {
+    list-style: none;
+    padding: 18px;
+    padding-left: 26px;
+    padding-right: 27px;
+    border: 1px solid black;
+    border-left: none;
+}
+
+#nav li:first-child {
+    border-radius: 10px 0 0 10px;
+    border-left: 1px solid black;
+}
+
+#nav li:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+#nav li a {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#nav li:hover, .seleccionat {
+    background-color: #8ab3cf;
+}
+
+#nav li:hover a, #nav li.seleccionat a {
+    color: white;
+}
+
+#header_icones {
+    word-spacing: 5px;
+}
+
+.icona {
+    font-size: 1.55em;
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+}
+
+.main p {
+    font-size: 1.11em;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.footer {
+    position: relative;
+    border-top: 1px solid rgb(207, 207, 207);
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+
+.footer-contingut {
+    display: flex;
+    padding-left: 5.7%;
+}
+
+.footer_element {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.footer_element h3 {
+    font-size: 1.1em;
+}
+
+.footer_opcio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.07em;
+    gap: 90px;
+}
+
+.footer_opcio {
+    line-height: 0px;
+}
+
+.footer_opcio a:hover p {
+    color: #8b8b8b;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 1.11em;
+}
+
+/* ----------------- Estils en telefon ---------------- */
+
+.header_mobile {
+    display: none;
+    border-bottom: 1px solid black;
+}
+
+#menu_hamburguesa {
+    font-size: 2.25em;
+    padding-right: 50px;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+#logotip_mobile {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logotip_mobile img {
+    width: 51px;
+}
+
+#nav_mobile {
+    display: none;
+    position: absolute;
+    top: 65%;
+    left: 0;
+    width: 190px;
+    border: 2px solid black;
+    z-index: 999;
+    background-color: white;
+}
+
+#nav_mobile li {
+    list-style: none;
+    padding: 17.5px;
+    padding-left: 25px;
+    margin-left: -40px;
+}
+
+#nav_mobile li a {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+
+#nav_mobile li:hover, .seleccionat {
+    background-color: #8ab3cf;
+}
+
+#nav_mobile li:hover a, #nav_mobile li.seleccionat a {
+    color: white;
+}
+
+/* mostrar menú al passar el mouse */
+#menu_hamburguesa:hover + #nav_mobile,
+#nav_mobile:hover {
+    display: block;
+}
+
+/* Si l'ample de la pantalla es menor o igual a 1200px */
+@media (max-width: 1200px) {
+    .header {
+        display: none;
+    }
+
+    .header_mobile {
+        display: block;
+    }
+}
