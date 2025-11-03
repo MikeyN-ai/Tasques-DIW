@@ -14,6 +14,12 @@
     align-items: center;
 }
 
+#logotip {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 #logo {
     width: 90px;
     margin-top: 18px;
@@ -21,9 +27,14 @@
 }
 
 #nav {
+    position: fixed; 
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white; 
+    z-index: 999;
     display: flex;
     justify-content: center;
-    padding-right: 38px;
+    padding: 0;
 }
 
 #nav li {
@@ -44,8 +55,8 @@
     border-radius: 0 10px 10px 0;
 }
 
-#nav li a {
-    font-size: 1.1em;
+#nav li a, #nav li {
+    font-size: 1.05em;
     font-weight: 600;
 }
 
@@ -53,7 +64,7 @@
     background-color: #8ab3cf;
 }
 
-#nav li:hover a, #nav li.seleccionat a {
+#nav li:hover a, #nav .seleccionat{
     color: white;
 }
 
@@ -63,6 +74,10 @@
 
 .icona {
     font-size: 1.55em;
+}
+
+#menu_hamburguesa {
+    display: none;
 }
 
 .main {
@@ -103,14 +118,16 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1.07em;
-    gap: 90px;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
-.footer_opcio {
-    line-height: 0px;
+.footer_opcio p {
+    margin: 0;
+    line-height: 25px;
 }
 
-.footer_opcio a:hover p {
+.footer_opcio:hover p{
     color: #8b8b8b;
 }
 
@@ -119,78 +136,60 @@
     font-size: 1.11em;
 }
 
-/* ----------------- Estils en telefon ---------------- */
+/* Si l'ample de la pantalla es menor o igual a 767px */
+@media only screen and (max-width: 767px) {
 
-.header_mobile {
-    display: none;
-    border-bottom: 1px solid black;
-}
-
-#menu_hamburguesa {
-    font-size: 2.25em;
-    padding-right: 50px;
-    
-    padding-top: 20px;
-    padding-bottom: 20px;
-    cursor: pointer;
-}
-
-#logotip_mobile {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#logotip_mobile img {
-    width: 51px;
-}
-
-#nav_mobile {
-    display: none;
-    position: absolute;
-    top: 65%;
-    left: 0;
-    width: 190px;
-    border: 2px solid black;
-    z-index: 999;
-    background-color: white;
-}
-
-#nav_mobile li {
-    list-style: none;
-    padding: 17.5px;
-    padding-left: 25px;
-    margin-left: -40px;
-}
-
-#nav_mobile li a {
-    font-size: 1.1em;
-    font-weight: 600;
-}
-
-
-#nav_mobile li:hover, .seleccionat {
-    background-color: #8ab3cf;
-}
-
-#nav_mobile li:hover a, #nav_mobile li.seleccionat a {
-    color: white;
-}
-
-/* mostrar menú al passar el mouse */
-#menu_hamburguesa:hover + #nav_mobile,
-#nav_mobile:hover {
-    display: block;
-}
-
-/* Si l'ample de la pantalla es menor o igual a 1200px */
-@media (max-width: 1200px) {
-    .header {
-        display: none;
+    #menu_hamburguesa {
+        display: block;
+        font-size: 2.25em;
+        padding-right: 50px;  
+        padding-top: 20px;
+        padding-bottom: 20px;
+        cursor: pointer;
     }
 
-    .header_mobile {
-        display: block;
+    #logotip {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logotip img {
+        width: 51px;
+    }
+
+    #nav {
+        display: none;
+        position: absolute;
+        top: 65%;
+        left: 0%;
+        width: 190px;
+        border: 2px solid black;
+        z-index: 999;
+        background-color: white;
+        border-radius: none;
+        padding: 0;
+        padding-left: 40px;
+        transform: none;
+    }
+
+    #nav li {
+        list-style: none;
+        padding: 17.5px;
+        padding-left: 25px;
+        margin-left: -40px;
+        border: none;
+        border-radius: none;
+    }
+
+    #nav li a, #nav li {
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    #nav li:first-child, #nav li:last-child {
+        border-radius: 0px;
+        border: none;
     }
 }
