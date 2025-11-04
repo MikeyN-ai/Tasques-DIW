@@ -101,16 +101,21 @@
 
 .footer-contingut {
     display: flex;
-    padding-left: 5.7%;
+    flex-direction: row;
+    padding-left: 4.8%;
 }
 
 .footer_element {
     padding-top: 20px;
-    padding-left: 50px;
+    border: 1px solid black;
+    max-width: 1000px;
+    min-width: 227px;
 }
 
 .footer_element h3 {
     font-size: 1.1em;
+    margin-bottom: 0;
+    margin-left: 15px;
 }
 
 .footer_opcio {
@@ -118,13 +123,17 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1.07em;
-    max-width: 100%;
-    flex-wrap: wrap;
 }
 
-.footer_opcio p {
+.footer_link {
+    margin-top: 39px;
+    line-height: 27px;
+    padding-bottom: 15px;
+}
+
+.footer_link p {
     margin: 0;
-    line-height: 25px;
+    margin-left: 15px;
 }
 
 .footer_opcio:hover p{
