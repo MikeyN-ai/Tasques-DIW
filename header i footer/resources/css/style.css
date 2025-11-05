@@ -20,7 +20,8 @@
 #logotip {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: center;  
+    flex: 1;
 }
 
 #logo {
@@ -29,10 +30,13 @@
     margin-bottom: 17px;
 }
 
+#menu_nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
 #nav {
-    position: fixed; 
-    left: 50%;
-    transform: translate(-50%);
     background-color: white; 
     z-index: 999;
     display: flex;
@@ -205,8 +209,11 @@
 /* Si l'ample de la pantalla es menor o igual a 767px */
 @media only screen and (max-width: 767px) {
 
+    /* Estils del header en telefon */
+
     #logotip {
         padding-left: 17px;
+        flex: 0;
     }
 
     #header_icones {
@@ -245,7 +252,8 @@
         border-radius: none;
         padding: 0;
         padding-left: 40px;
-        transform: none;
+        flex: 0;
+
     }
 
     #nav li {
@@ -267,7 +275,7 @@
         border: none;
     }
 
-    /* Estils del footer */
+    /* Estils del footer en telefon  */
 
     .footer {
         margin: 0;
