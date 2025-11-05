@@ -32,7 +32,7 @@ function main() {
         // Cambiar icono y mostrar/ocultar elementos
         if (footerElement.classList.contains("footer_element_seleccionat")) {
             icon.classList.replace("fa-chevron-down", "fa-chevron-up");
-            opciones.forEach(el => el.style.display = "flex");
+            opciones.forEach(el => el.style.display = "block");
         } else {
             icon.classList.replace("fa-chevron-up", "fa-chevron-down");
             opciones.forEach(el => el.style.display = "none");

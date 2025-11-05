@@ -165,10 +165,18 @@
     padding-left: 10px;
 }
 
-.xarxes a {
+.xarxa {
+    flex: 0 0 calc(33.333% - 10px);
+}
+
+.xarxa a {
     font-size: 1.6em;
     line-height: 32px;
     flex: 0 0 calc(33.333% - 10px);
+}
+
+.xarxa p {
+    display: none;
 }
 
 .icones_pagament {
@@ -229,7 +237,7 @@
         display: none;
         position: absolute;
         top: 65%;
-        left: 0%;
+        left: 15%;
         width: 190px;
         border: 2px solid black;
         z-index: 999;
@@ -325,20 +333,11 @@
         padding-left: 36px;
     }
 
-    .footer_opcio i {
-        position: relative;
-    }
-
     .footer_link, .xarxes {
         background-color: white;
         margin: 0;
         padding: 0;
         margin-top: 20px;
-    }
-
-    .footer_link p {
-        margin: 0;
-        margin-left: 15px;
     }
 
     .footer_link a:first-child {
@@ -353,8 +352,33 @@
         display: none;
     }
 
-    .footer_opcio:hover p, .footer_opcio:hover i {
-        color: #8b8b8b;
+    .xarxes {
+        display: none;
+        gap: 0px;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .xarxa {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: 0;
+        padding-left: 97px;
+        margin-bottom: 18px;
+    }
+
+    .xarxa a {
+        font-size: 2.7em;
+        flex: none;
+    }
+
+    .xarxa p {
+        display: flex;
+        font-size: 1.15em;
+        margin: 0;
+        padding-left: 10px;
     }
 
     .icones_pagament {
