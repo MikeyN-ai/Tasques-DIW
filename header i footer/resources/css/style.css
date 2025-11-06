@@ -67,6 +67,10 @@
     font-weight: 600;
 }
 
+#nav li a {
+    display: flex;
+}
+
 #nav li:hover, .seleccionat {
     background-color: #8ab3cf;
 }
