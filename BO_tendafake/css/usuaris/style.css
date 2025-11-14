@@ -1,0 +1,71 @@
+.contingut_main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-quaternari);
+    padding-bottom: 15px;
+}
+
+.element_main {
+    width: 33%;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.element_main input {
+    margin-top: 12px;
+    padding-left: 12px;
+}
+
+.botons_accio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    margin-top: -5px;
+    padding-right: 13px;
+}
+
+button:hover {
+    font-weight: bold;
+}
+
+button i {
+    padding-right: 24px;
+}
+
+.cercar {
+    background-color: var(--color-terciari);
+}
+
+.netejar {
+    background-color: var(--color-boto-netejar);
+}
+.netejar i {
+    font-size: 0.75em;
+}
+
+/* Si l'ample de la pantalla es menor o igual a 767px */
+@media only screen and (max-width: 767px) {
+    .element_main {
+        width: 100%;
+        padding-right: 15px;
+        padding-bottom: 8px;
+    }
+
+    .botons_accio {
+        flex-wrap: wrap;
+        padding-top: 16px;
+        gap: 10px;
+    }
+
+    .botons_accio button {
+        width: 100%;
+        margin-left: 15px;
+    }
+}

@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
         rel="stylesheet">
+        <script src="js/common.js"></script>
     </head>
     <body>
         <div class="container-fluid sense-separacio">
@@ -31,7 +32,9 @@
                             <span class="separador">&nbsp;</span>
                         </div>
                         <div class="tancarSessio">
-                            <i class="fa-solid fa-arrow-right-from-bracket iconaTancarSessio"></i>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right-from-bracket iconaTancarSessio"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -42,54 +45,85 @@
                 </div>
             </div>
             <div class="row main">
-                <div class="col-2 menu_lateral">
+                <div id="menu_lateral" class="col-2">
                     <div class="opcio_menu">
                         <i class="fa-solid fa-paperclip"></i>
                         <a href="#">Atributs</a>
                     </div>
                     <div class="opcio_menu">
-                        <i class="fa-solid fa-paperclip"></i>
-                        <a href="#">Atributs</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="#">Carrets</a>
                     </div>
                     <div class="opcio_menu">
-                        <i class="fa-solid fa-paperclip"></i>
-                        <a href="#">Atributs</a>
+                        <i class="fa-solid fa-person"></i>
+                        <a href="#">Clients</a>
                     </div>
                     <div class="opcio_menu">
-                        <i class="fa-solid fa-paperclip"></i>
-                        <a href="#">Atributs</a>
+                        <i class="fa-solid fa-sliders"></i>
+                        <a href="#">Configuracións</a>
                     </div>
                     <div class="opcio_menu">
-                        <i class="fa-solid fa-paperclip"></i>
-                        <a href="#">Atributs</a>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <a href="#">Comandes</a>
                     </div>
                     <div class="opcio_menu">
-                        <i class="fa-solid fa-paperclip"></i>
-                        <a href="#">Atributs</a>
+                        <i class="fa-solid fa-chart-line"></i>
+                        <a href="#">Estadístiques</a>
                     </div>
                     <div class="opcio_menu">
-                        <i class="fa-solid fa-paperclip"></i>
-                        <a href="#">Atributs</a>
+                        <i class="fa-solid fa-list"></i>
+                        <a href="#">Families</a>
                     </div>
                     <div class="opcio_menu">
-                        <i class="fa-solid fa-paperclip"></i>
-                        <a href="#">Atributs</a>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="#">Localitzacions</a>
                     </div>
                     <div class="opcio_menu">
-                        <i class="fa-solid fa-paperclip"></i>
-                        <a href="#">Atributs</a>
+                        <i class="fa-solid fa-tag"></i>
+                        <a href="#">Ofertes</a>
                     </div>
                     <div class="opcio_menu">
-                        <i class="fa-solid fa-paperclip"></i>
-                        <a href="#">Atributs</a>
+                        <i class="fa-solid fa-city"></i>
+                        <a href="#">Productes</a>
                     </div>
                     <div class="opcio_menu opcio_seleccionada">
-                        <i class="fa-solid fa-paperclip"></i>
-                        Atributs
+                        <i class="fa-solid fa-user"></i>
+                        Usuaris
+                    </div>
+                    <div class="opcio_menu eixir_menu">
+                        <i class="fa-solid fa-arrow-right-from-bracket iconaTancarSessio"></i>
+                        <a href="#">Eixir</a>
                     </div>
                 </div>
                 <div class="col-10">
-                    
+                    <form action="" class="contingut_main">
+                        <div class="element_main">
+                            <label>Nom</label>
+                            <input type="text">
+                        </div>                        
+                        <div class="element_main">
+                            <label>Cognoms</label>
+                            <input type="text">
+                        </div>                        
+                        <div class="element_main">
+                            <label>Dni</label>
+                            <input type="text">
+                        </div>
+                        <div class="element_main">
+                            <label>Email</label>
+                            <input type="text">
+                        </div>
+                        <div class="botons_accio">
+                            <button class="cercar" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                Cercar
+                            </button>
+                            <button class="netejar" type="reset">
+                                <i class="fa-solid fa-xmark"></i>
+                                Netejar
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
