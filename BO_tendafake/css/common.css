@@ -157,7 +157,7 @@
     #menu_lateral {
         display: none;
         position: fixed;
-        height: 62%;
+        height: 70%;
         left: 0;
         top: 20;
         z-index: 2;
