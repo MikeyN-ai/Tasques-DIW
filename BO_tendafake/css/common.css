@@ -91,29 +91,30 @@
 /* Estils per al main */
 
 #menu_lateral {
+    display: block;
     background-color: var(--color-primari);
+    height: 92vh;
 }
 
 .opcio_menu {
-    padding-left: 20px;
+    display: block;
+}
+
+.opcio_menu, .opcio_seleccionada {
+    text-decoration: none;
+    padding-left: 21px;
     padding-top: 15px;
     padding-bottom: 17px;
     border-bottom: 1px solid white;
 }
 
-.opcio_menu a {
-    font-size: 1em;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 5px;
-    padding-right: 30px;
-    text-align: center;
-    text-decoration: none;
-}
-
 .opcio_menu:hover {
     background-color: var(--color-secundari);
     font-weight: bold;
+}
+
+.opcio_menu i {
+    padding-right: 22px;
 }
 
 .opcio_seleccionada {
@@ -156,6 +157,7 @@
     #menu_lateral {
         display: none;
         position: fixed;
+        height: 62%;
         left: 0;
         top: 20;
         z-index: 2;
@@ -163,7 +165,7 @@
 
     .eixir_menu {
         display: block;
-        padding-left: 10px;
+        padding-left: 5px;
     }
 }
 
@@ -173,7 +175,7 @@ input {
     padding: 6px;
     width: 100%;
     border-radius: 5px;
-    border: 2px solid #495057;
+    border: 1px solid #495057;
     color: black;
 }
 

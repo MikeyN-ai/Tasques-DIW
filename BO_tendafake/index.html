@@ -16,6 +16,7 @@
         <script src="js/common.js"></script>
     </head>
     <body>
+        <!-- Header -->
         <div class="container-fluid sense-separacio">
             <div class="row header">
                 <div class="col-12 centrar_header">
@@ -39,89 +40,106 @@
                     </div>
                 </div>
             </div>
+            <!-- Titol de la pàgina -->
             <div class="row pagina">
                 <div class="col-12">
                     <p>Llistat d'usuaris</p>
                 </div>
             </div>
+            <!-- Menu lateral -->
             <div class="row main">
                 <div id="menu_lateral" class="col-2">
-                    <div class="opcio_menu">
+                    <a href="#" class="opcio_menu">
                         <i class="fa-solid fa-paperclip"></i>
-                        <a href="#">Atributs</a>
-                    </div>
-                    <div class="opcio_menu">
+                        Atributs
+                    </a>
+                    <a href="#" class="opcio_menu">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <a href="#">Carrets</a>
-                    </div>
-                    <div class="opcio_menu">
+                        Carrets
+                    </a>
+                    <a href="#" class="opcio_menu">
                         <i class="fa-solid fa-person"></i>
-                        <a href="#">Clients</a>
-                    </div>
-                    <div class="opcio_menu">
+                        Clients
+                    </a>
+                    <a href="#" class="opcio_menu">
                         <i class="fa-solid fa-sliders"></i>
-                        <a href="#">Configuracións</a>
-                    </div>
-                    <div class="opcio_menu">
+                        Configuracions
+                    </a>
+                    <a href="#" class="opcio_menu">
                         <i class="fa-solid fa-pen-to-square"></i>
-                        <a href="#">Comandes</a>
-                    </div>
-                    <div class="opcio_menu">
+                        Comandes
+                    </a>
+                    <a href="#" class="opcio_menu">
                         <i class="fa-solid fa-chart-line"></i>
-                        <a href="#">Estadístiques</a>
-                    </div>
-                    <div class="opcio_menu">
+                        Estadístiques
+                    </a>
+                    <a href="#" class="opcio_menu">
                         <i class="fa-solid fa-list"></i>
-                        <a href="#">Families</a>
-                    </div>
-                    <div class="opcio_menu">
+                        Families
+                    </a>
+                    <a href="#" class="opcio_menu">
                         <i class="fa-solid fa-location-dot"></i>
-                        <a href="#">Localitzacions</a>
-                    </div>
-                    <div class="opcio_menu">
+                        Localitzacions
+                    </a>
+                    <a href="#" class="opcio_menu">
                         <i class="fa-solid fa-tag"></i>
-                        <a href="#">Ofertes</a>
-                    </div>
-                    <div class="opcio_menu">
+                        Ofertes
+                    </a>
+                    <a href="#" class="opcio_menu">
                         <i class="fa-solid fa-city"></i>
-                        <a href="#">Productes</a>
-                    </div>
-                    <div class="opcio_menu opcio_seleccionada">
+                        Productes
+                    </a>
+                    <div class="opcio_seleccionada">
                         <i class="fa-solid fa-user"></i>
                         Usuaris
                     </div>
-                    <div class="opcio_menu eixir_menu">
+                    <a href="#" class="opcio_menu eixir_menu">
                         <i class="fa-solid fa-arrow-right-from-bracket iconaTancarSessio"></i>
-                        <a href="#">Eixir</a>
-                    </div>
+                        Eixir
+                    </a>
                 </div>
+                <!-- Filtres -->
                 <div class="col-10">
                     <form action="" class="contingut_main">
-                        <div class="element_main">
-                            <label>Nom</label>
-                            <input type="text">
-                        </div>                        
-                        <div class="element_main">
-                            <label>Cognoms</label>
-                            <input type="text">
-                        </div>                        
-                        <div class="element_main">
-                            <label>Dni</label>
-                            <input type="text">
-                        </div>
-                        <div class="element_main">
-                            <label>Email</label>
-                            <input type="text">
-                        </div>
-                        <div class="botons_accio">
-                            <button class="cercar" type="submit">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                Cercar
-                            </button>
-                            <button class="netejar" type="reset">
-                                <i class="fa-solid fa-xmark"></i>
-                                Netejar
-                            </button>
+                        <div class="container-fluid sense-separacio">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="element_main">
+                                        <label>Nom</label>
+                                        <input id="nom" name="nom" type="text">
+                                    </div> 
+                                    <div class="element_main">
+                                        <label>Email</label>
+                                        <input id="email" name="email" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-4">                        
+                                    <div class="element_main">
+                                        <label>Cognoms</label>
+                                        <input id="cognom" name="cognom" type="text">
+                                    </div>  
+                                </div>
+                                <div class="col-4">                   
+                                    <div class="element_main">
+                                        <label>Dni</label>
+                                        <input id="dni" name="dni" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="botons_accio">
+                                        <button class="cercar" type="submit">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                            Cercar
+                                        </button>
+                                        <button class="netejar" type="reset">
+                                            <i class="fa-solid fa-xmark"></i>
+                                            Netejar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
