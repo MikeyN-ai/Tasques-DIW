@@ -1,0 +1,36 @@
+Errores SPRINT 3:
+-------------------------------------------------------------------------------
+
+1. Enlaces rotos que no van donde deben
+
+2. Error 404 personalizado
+
+3. Poner estadisticas en todas las páginas necesarias
+
+4. Mapa web : Añadir cada producto al Mapa web
+
+5. Cumplir la legislación de privacidad en las páginas web (aviso de cookies)
+
+6. Cambio del logo si el usuario está logueado en FE
+
+7. Poner numerito al carrito
+
+8. Finalizar compra tambien tiene que tener header y footer
+
+9. Habian páginas que no funcionaba
+
+10. Si el usuario no está registrado no deberia verse el icono de pedidos
+
+11. Algunas webs no tenian los mimos elementos: inputs, tamaño de elementos, bordes, color de fondo, 
+estadisticas, color de los titulos y tamaño, distancia entre los elementos (padding top y bottom), 
+botones homogenios
+
+12. Si no se puede modificar hay que ponerlo en disabled
+
+13. Tamaño de letra de la información
+
+14. Hover de los elementos debe ser igual
+
+15. Inputs iguales
+
+16. Gouters usarlos

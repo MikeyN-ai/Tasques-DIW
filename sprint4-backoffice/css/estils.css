@@ -1,3 +1,7 @@
 .persona {
     width: 65px;
 }
+
+body {
+    font-family: Inter;
+}
