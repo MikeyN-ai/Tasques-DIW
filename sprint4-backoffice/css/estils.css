@@ -5,3 +5,24 @@
 body {
     font-family: Inter;
 }
+
+.bg-gris {
+    background-color: #d1d5db;
+}
+
+.bg_menu_lateral, .menu_lateral {
+    background-color: #1e293b;
+}
+
+.menu_lateral {
+    height: 100vh;
+}
+
+.list-group-item-action:hover {
+    background-color: #47488e !important;
+}
+
+.seleccionat {
+    background-color: #47488e !important;
+    border-left: 6px solid #a5b4fc !important;
+}
