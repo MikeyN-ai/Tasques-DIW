@@ -26,7 +26,7 @@
                                 <i class="bi bi-lightbulb bg-warning py-1 px-2 fs-6 text-white rounded-circle"></i>
                                 <span class="fs-4 fw-bolder px-2">SELECTIO</span>
                             </a>
-                            <span class="navbar-text d-flex align-items-center">
+                            <span class="d-flex align-items-center py-2">
                                 <img class="rounded-circle persona" src="img/foto_persona.png" alt="Foto Manolo Garibolo">
                                 <span class="text-black pe-3 ps-3">Manolo Garibolo</span>
                                 <a href="#">
@@ -40,64 +40,152 @@
             <div class="row">
                 <div class="col-12 bg-gris text-center d-flex align-items-center flex-column py-3">
                     <h2 class="fs-5 fw-bold m-0">Llistat d'usuaris</h2>
-                    <p class="small m-0">Gestió i manteniment dels usuaris del sistema</p>
+                    <p class="small m-0 text-black-50">Gestió i manteniment dels usuaris del sistema</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row fixed-start">
                 <div class="col-2 p-0">
                     <div class="list-group rounded-0 list-group-flush menu_lateral">
                         <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
                             <i class="bi bi-paperclip fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Atributs</span>
+                            Atributs
                         </a>
                         <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
                             <i class="bi bi-cart-fill fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Carrets</span>
+                            Carrets
                         </a>
                         <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
                             <i class="bi bi-person-standing fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Clients</span>
+                            Clients
                         </a>
                         <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
                             <i class="bi bi-sliders fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Configur.</span>
+                            Configur.
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
+                        <a href="#" class="list-group-item list-group-item-action gx-5 border-0 link-light bg_menu_lateral d-flex align-items-center">
                             <i class="bi bi-bag fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Coman.</span>
+                            Coman.
+                            <span class="badge text-bg-danger rounded-pill py-1 ms-3">1</span>
                         </a>
                         <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
                             <i class="bi bi-bar-chart fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Estadís.</span>
+                            Estadís.
                         </a>
                         <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
                             <i class="bi bi-folder fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Famílies</span>
+                            Famílies
                         </a>
                         <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
                             <i class="bi bi-geo-alt fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Localitza.</span>
+                            Localitza.
                         </a>
                         <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
                             <i class="bi bi-tag fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Ofertes</span>
+                            Ofertes
                         </a>
                         <a href="#" class="list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
                             <i class="bi bi-box-seam fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Productes</span>
+                            Productes
                         </a>
                         <div class="list-group-item  list-group-item-action seleccionat border-0 link-light bg_menu_lateral d-flex align-items-center">
-                            <i class="bi bi-person fs-4 pe-3 py-1"></i>
-                            <span class="">Usuaris</span>
+                            <i class="bi bi-person fs-4 ms-0 ps-0 pe-3 py-1"></i>
+                            Usuaris
                         </div>
                         <a href="#" class="d-lg-none list-group-item list-group-item-action border-0 link-light bg_menu_lateral d-flex align-items-center">
                             <i class="bi bi-box-arrow-right fs-4 pe-3 py-1"></i>
-                            <span class="pt-2">Exit</span>
+                            Exit
                         </a>
                     </div>
                 </div>
-                <div class="col-10 bg-danger">
+                <div class="col-10">
+                    <div class="container-fluid p-0">
+                        <form class="rounded bg_filtre mt-4 pt-3 mx-1">
+                            <div class="row mx-2">
+                                <div class="col-4">
+                                    <div class="mb-3">
+                                        <label for="inputNom" class="form-label">Nom</label>
+                                        <input type="text" class="form-control" id="inputNom" aria-describedby="nomHelp" placeholder="Filtrar per nom ...">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail" aria-describedby="EmailHelp" placeholder="Filtrar per email ...">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="mb-3">
+                                        <label for="inputCognom" class="form-label">Cognoms</label>
+                                        <input type="text" class="form-control" id="inputCognom" aria-describedby="cognomHelp" placeholder="Filtrar per cognoms ...">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="mb-3">
+                                        <label for="inputDni" class="form-label">Dni</label>
+                                        <input type="text" class="form-control" id="inputDni" aria-describedby="dniHelp" placeholder="Filtrar per dni ...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pe-1">
+                                <div class="col-12 d-flex gap-2 justify-content-end px-4 pb-3">
+                                    <button type="submit" class="btn btn-warning text-white">
+                                        <i class="bi bi-funnel"></i>
+                                        Filtrar
+                                    </button>
+                                    <button type="reset" class="btn btn-secondary">
+                                        <i class="bi bi-trash"></i>
+                                        Netejar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
 
+                    <div class="row">
+                        <div class="col-12">
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <table id="taula" class="table table-striped-row mt-4 form-check">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col" class="text-primary">ID</th>
+                                        <th scope="col">Nom</th>
+                                        <th scope="col">Cognom</th>
+                                        <th scope="col">DNI/NIF</th>
+                                        <th scope="col">Telèfon</th>
+                                        <th scope="col">Correu</th>
+                                        <th scope="col">Accions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                        </td>
+                                        <td>1001</td>
+                                        <td>Juan Palomo</td>
+                                        <td>6845699G</td>
+                                        <td>639639639</td>
+                                        <td>carlos2@gmail.com</td>
+                                        <td>
+                                            <a href="#">
+                                                <i class="bi bi-box-arrow-right ps-3 py-3 fs-4 text-primary"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="bi bi-box-arrow-right ps-3 py-3 fs-4 text-primary"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="bi bi-box-arrow-right ps-3 py-3 fs-4 text-primary"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

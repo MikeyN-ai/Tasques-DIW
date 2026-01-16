@@ -24,5 +24,10 @@ body {
 
 .seleccionat {
     background-color: #47488e !important;
-    border-left: 6px solid #a5b4fc !important;
+    border-left: 5px solid #a5b4fc !important;
+    padding-left: 0.8em;
+}
+
+.bg_filtre {
+    background-color: #bcd0ea;
 }
