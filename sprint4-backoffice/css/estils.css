@@ -6,7 +6,7 @@ body {
     font-family: Inter;
 }
 
-.bg-gris {
+.bg_gris {
     background-color: #d1d5db;
 }
 
@@ -30,4 +30,47 @@ body {
 
 .bg_filtre {
     background-color: #bcd0ea;
+}
+
+.bg_blau_oscur {
+   background-color: #47488e;
+}
+
+.text_blau_oscur {
+    color: #47488e;
+}
+
+.max {
+    width: 100%;
+}
+
+.bg_dalt_taula {
+    background-color: #b5b7b9;
+}
+
+button:hover {
+    background-color: #212529 !important;
+    color: white !important;
+}
+
+/* Si l'ample de la pantalla es menor o igual a 767px */
+@media only screen and (max-width: 767px) {
+
+    #taula thead th {
+        display: none;
+    }
+
+    #taula td { /* cambiar */
+        display: block;
+    }
+
+    #taula td::before {
+        content: attr(data-cell) "";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    #taula td[data-no-colon="true"]::before {
+        content: "";
+    }
 }
