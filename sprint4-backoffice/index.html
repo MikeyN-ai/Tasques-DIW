@@ -21,17 +21,17 @@
                     <nav class="navbar navbar-expand-sm bg-white">
                         <div class="container-fluid">
                             <a href="#" id="menu_hamburguesa" class="d-block d-sm-none">
-                                <i class="bi bi-list fs-1 text-black"></i>
+                                <i class="bi bi-list fs-1 text-black pe-4"></i>
                             </a>
                             <a class="navbar-brand d-flex align-items-center" href="#">
-                                <i class="bi bi-lightbulb bg-warning py-1 px-2 fs-6 text-white rounded-circle"></i>
-                                <span class="fs-4 fw-bolder px-2">SELECTIO</span>
+                                <i class="bi bi-lightbulb bg-warning px-2 py-1 fs-6 text-white rounded-circle"></i>
+                                <span class="fs-4 fw-bolder px-2 py-1">SELECTIO</span>
                             </a>
-                            <span class="d-flex align-items-center py-1">
+                            <span class="d-flex align-items-center py-2 py-sm-1">
                                 <img class="rounded-circle persona" src="img/foto_persona.png" alt="Foto Manolo Garibolo">
                                 <span class="text-black pe-3 ps-3 d-none d-sm-block">Manolo Garibolo</span>
                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                    <i class="bi bi-box-arrow-right ps-3 py-3 fs-4 border-start border-black text-primary d-none d-sm-block"></i>
+                                    <i class="bi bi-box-arrow-right ps-3 py-3 fs-4 border-start border-secondary text-primary d-none d-sm-block"></i>
                                 </a>
                             </span>
                         </div>
@@ -130,29 +130,29 @@
                                 <div class="col-lg-4 col-md-6 col-12">
                                     <div class="mb-3">
                                         <label for="inputNom" class="form-label">Nom</label>
-                                        <input type="text" class="form-control border border-dark-subtle" id="inputNom" aria-describedby="nomHelp" placeholder="Filtrar per nom ...">
+                                        <input type="text" class="form-control border border-dark-subtle" id="inputNom" aria-describedby="nomHelp" placeholder="Filtrar per nom ..." maxlength="24">
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12">
                                     <div class="mb-3">
                                         <label for="inputCognom" class="form-label">Cognoms</label>
-                                        <input type="text" class="form-control border border-dark-subtle" id="inputCognom" aria-describedby="cognomHelp" placeholder="Filtrar per cognoms ...">
+                                        <input type="text" class="form-control border border-dark-subtle" id="inputCognom" aria-describedby="cognomHelp" placeholder="Filtrar per cognoms ..." maxlength="24">
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12">
                                     <div class="mb-3">
                                         <label for="inputDNI/CIF" class="form-label">Dni</label>
-                                        <input type="text" class="form-control border border-dark-subtle" id="inputDNI" aria-describedby="DNIHelp" placeholder="Filtrar per dni ...">
+                                        <input type="text" class="form-control border border-dark-subtle" id="inputDNI" aria-describedby="DNIHelp" placeholder="Filtrar per dni ..." maxlength="9">
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12">
                                     <div class="mb-3">
                                         <label for="inputEmail" class="form-label">Email</label>
-                                        <input type="email" class="form-control border border-dark-subtle" id="inputEmail" aria-describedby="EmailHelp" placeholder="Filtrar per email ...">
+                                        <input type="email" class="form-control border border-dark-subtle" id="inputEmail" aria-describedby="EmailHelp" placeholder="Filtrar per email ..." maxlength="24">
                                     </div>
                                 </div>
                             </div>
-                            <div class="row pe-2">
+                            <div class="row px-2">
                                 <div class="col-12 px-4 pb-3">
                                     <div class="d-grid gap-2 mx-auto d-md-flex justify-content-md-end">
                                         <button type="submit" class="btn btn-warning text-white">
@@ -171,8 +171,8 @@
 
                     <div class="row mx-1">
                         <div class="col-12 bg_dalt_taula rounded-top p-1 px-2">
-                            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
-                                <div class="input-group order-last order-sm-first mt-2 d-flex tot w-auto">
+                            <div class="d-flex flex-column flex-sm-row justify-content-sm-between justify-content-center align-items-center ps-1 ps-sm-0">
+                                <div class="input-group order-last order-sm-first mt-2 mt-sm-1 mb-1 mx-1 d-flex tot w-auto">
                                     <div class="form-floating border border-1 border-light rounded-start">
                                         <select class="form-select" id="floatingSelect">
                                                 <option value="" selected>
@@ -186,13 +186,13 @@
                                     </div>
 
                                     <button class="btn bg_blau_oscur text-white border border-light px-5 px-sm-3">
-                                        <i class="bi bi-check-circle"></i>
-                                        Aplicar
+                                        <i class="bi bi-check-circle ps-4 ps-sm-0 pe-0 pe-sm-0"></i>
+                                        <span class="pe-4 pe-sm-0">Aplicar</span>
                                     </button>
                                 </div>
 
-                                <button class="btn btn-dark tot border border-light d-flex align-items-center justify-content-center py-sm-3 py-2 order-first order-md-last text-white rounded-start">
-                                    <i class="bi bi-plus-circle pe-2"></i>
+                                <button class="btn btn-dark tot border border-light d-flex mt-1 mt-sm-0 align-items-center justify-content-center me-1 py-sm-3 py-2 order-first order-md-last text-white rounded-start">
+                                    <i class="bi bi-plus-circle pe-1"></i>
                                     Crear
                                 </button>
 
@@ -206,7 +206,9 @@
                                 <table id="taula" class="table table-striped">
                                     <thead class="border-bottom-3 border-dark-subtle">
                                         <tr class="text-center">
-                                            <th scope="col" class="bg_thead"><input class="form-check-input" type="checkbox" value="" id="checkDefault"></th>
+                                            <th scope="col" class="bg_thead">
+                                                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                            </th>
                                             <th scope="col" class="bg_thead">ID</th>
                                             <th scope="col" class="bg_thead">Nom</th>
                                             <th scope="col" class="bg_thead">DNI/NIF</th>
@@ -222,12 +224,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1001</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -243,12 +245,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1002</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -264,12 +266,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1003</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -285,12 +287,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1004</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -306,12 +308,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1005</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -327,12 +329,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1006</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -348,12 +350,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1007</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -369,12 +371,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1008</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -390,12 +392,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1009</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -411,12 +413,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1010</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -432,12 +434,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1011</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -453,12 +455,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1012</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -474,12 +476,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1013</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -495,12 +497,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1014</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -516,12 +518,12 @@
                                             </td>
                                             <td class="fw-bolder text-align-center" data-cell="ID: ">1015</td>
                                             <td data-cell="Nom: ">Juan Palomo</td>
-                                            <td data-cell="DNI/CIF: ">6845699G</td>
+                                            <td data-cell="DNI/CIF: ">68458699G</td>
                                             <td data-cell="Telèfon: ">639639639</td>
                                             <td data-cell="Correu: ">carlos2@gmail.com</td>
                                             <td>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
-                                                    <i class="bi bi-pencil-square ps-3 py-3 fs-5 text-primary"></i>
+                                                    <i class="bi bi-pencil-square py-3 fs-5 text-primary"></i>
                                                 </a>
                                                 <a href="#" class="link-underline link-underline-opacity-0">
                                                     <i class="bi bi-eye ps-3 py-3 fs-5 text-black"></i>
@@ -540,17 +542,17 @@
                                     <nav aria-label="Page navigation example">
                                         <ul class="pagination">
                                             <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Previous">
-                                                <span aria-hidden="true">&laquo;</span>
-                                            </a>
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
                                             </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item active"><a class="page-link bg_blau_oscur" href="#">2</a></li>
+                                            <li class="page-item active"><a class="page-link bg_blau_oscur" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
                                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                                             <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Next">
-                                                <span aria-hidden="true">&raquo;</span>
-                                            </a>
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
                                             </li>
                                         </ul>
                                     </nav>

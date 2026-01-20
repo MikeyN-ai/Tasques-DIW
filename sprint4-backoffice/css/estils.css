@@ -62,7 +62,7 @@ body {
     background-color: var(--filtre) ;
 }
 
-.bg_blau_oscur, .active > .page-link, .list-group-item-action:hover {
+.bg_blau_oscur, .list-group-item-action:hover {
    background-color: var(--color-blau-oscur);
 }
 
@@ -85,6 +85,8 @@ body {
 
 .active > .page-link {
     color: var(--blanc) !important;
+    border: var(--menu-lateral);
+    background-color: var(--menu-lateral);
 }
 
 .navbar {
@@ -93,12 +95,11 @@ body {
   left: 0;
   right: 0;
   z-index: 1030;
-  background-color: blue;
 }
 
 .header-titulo {
   position: fixed;
-  top: 90px;
+  top: 89px;
   left: 0;
   right: 0;
   z-index: 1020;
@@ -106,7 +107,7 @@ body {
 
 #menu_lateral {
     position: fixed;
-    top: 167px;
+    top: 166px;
     left: 0;
     right: 0;
     z-index: 1010;
@@ -124,7 +125,7 @@ body {
         display: none;
     }
 
-    #taula td { /* cambiar */
+    #taula td { 
         display: block;
     }
 
@@ -140,13 +141,5 @@ body {
 
     .tot {
         width: 100% !important;
-    }
-
-    .header-titulo {
-        top: 80px;
-    }
-
-    #menu_lateral {
-        top: 157px;
     }
 }
