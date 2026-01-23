@@ -22,66 +22,92 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 p-0">
-                <nav class="navbar navbar-expand-lg bg-white">
+                <nav class="navbar navbar-expand-lg bg-white position-relative">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center">
                             <a class="navbar-brand d-flex align-items-center" href="#">
                                 <i class="bi bi-lightbulb-fill text-warning fs-5"></i>
                                 <span class="fs-5 fw-bolder px-3 py-2">SELECTIO</span>
                             </a>
-                            <form class="d-md-flex d-none" role="search">
+                            <form class="d-flex w-auto" role="search">
                                 <div class="input-group">
-                                    <button class="btn btn-outline-secondary" type="button" id="button-addon1">
-                                        <i class="bi bi-search"></i>
+                                    <button class="btn btn-light border-light-subtle" type="button" id="search">
+                                        <i class="bi bi-search text-dark"></i>
                                     </button>
-                                    <input type="text" class="form-control" placeholder="Cercar producte ..."
+                                    <input type="text" class="form-control bg_cercar border-light-subtle rounded-0 pe-4" placeholder="Cercar producte ..."
                                         aria-label="Search" aria-describedby="button-search">
                                 </div>
                             </form>
                         </div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <!-- <ul class="navbar-nav ms-auto gap-lg-3 border-top border-lg-0 pt-3 pt-lg-03"> -->
+                        <ul class="navbar-nav ms-auto d-flex align-items-center me-3">
+                            <li class="nav-item"><a class="nav-link active" href="#">Portàtils</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Mòbils</a></li>
+
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                                    Totes les categories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Components</a></li>
+                                    <li><a class="dropdown-item" href="#">Prifèrics</a></li>
+                                    <li><a class="dropdown-item" href="#">Consoles</a></li>
+                                    <li><a class="dropdown-item" href="#">Videojocs</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Ofertes</a></li>
+                        </ul>
+
+                        <div class="d-flex me-4 gap-3">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-cart-fill fs-3 position-relative"></i>
+                                <span class="position-absolute top-40 start-10 translate-middle badge rounded-pill bg-danger">
+                                    2
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </a>
+
+                            <a class="nav-link" href="#"><i class="bi bi-person fs-3 px-1 "></i></a>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#menuMobile" aria-controls="menuMobile"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse position-absolute top-100 start-0 w-100 bg-white shadow z-3 px-2" id="menuMobile">
+
+                        <form class="d-flex d-lg-none my-3 w-100" role="search">
+                            <div class="input-group w-100">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                                <input type="text" class="form-control" placeholder="Cercar producte ..."
+                                    aria-label="Search" aria-describedby="button-search">
+                            </div>
+                        </form>             
                     </div>
                 </nav>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center border-top border-black mb-3">
-                        <li class="nav-item w-100 px-3">
-                            <form class="d-flex d-md-none" role="search">
-                                <div class="input-group">
-                                    <button class="btn btn-outline-secondary" type="button" id="button-addon1">
-                                        <i class="bi bi-search"></i>
-                                    </button>
-                                    <input type="text" class="form-control" placeholder="Cercar producte ..."
-                                        aria-label="Search" aria-describedby="button-search">
-                                </div>
-                            </form>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portàtls</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mòbils</a>
-                        </li>
-                        <li class="nav-item">
-                            
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ofertes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="bi bi-cart-fill"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="bi bi-person"></i>
-                            </a>
-                        </li>
-                    </ul>
+            </div>
+        </div>
+
+        <div class="row bg_gris px-4 pt-3">
+            <div class="card mb-3 mt-4 shadow border-0">
+                <div class="row py-4 rounded pe-4">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Novetats</h5>
+                            <h1 class="lh-1 titol_primera_targeta bolder negrita">El futur de la tecnologia està ací</h1>
+                            <p class="card-text fs-5 mb-4">Actualitza't hui amb els últims accesoris d'alt rendiment amb dissenys moderns.</p>
+                            <a href="#" class="btn btn-primary fw-bold px-3 py-2">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ps-5">
+                        <img src="img/img-1.png" class="img-fluid rounded-end me-3" alt="Imatge de fons" style="width : 100%">
+                    </div>
                 </div>
             </div>
         </div>

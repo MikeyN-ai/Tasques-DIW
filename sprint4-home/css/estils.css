@@ -1,3 +1,30 @@
+:root {
+    --color-gris-clar : #f2f3f4;
+    --color-gris-cercar : #e9ecef;
+    --color-blanc : white;
+    --color-blau-clar : #bdd8f4;
+}
+
 body {
     font-family: "Space Grotesk";
+}
+
+.titol_primera_targeta {
+    font-size: 3.7em;
+}
+
+.bg_cercar {
+    background-color: var(--color-gris-cercar);
+}
+
+.bg_gris {
+    background-color: var(--color-gris-clar);
+}
+
+.nav-link:hover {
+    background-color: var(--color-blau-clar) !important;
+}
+
+.negrita {
+    font-weight: 900;
 }
