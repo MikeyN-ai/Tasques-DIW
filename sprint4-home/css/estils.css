@@ -2,7 +2,8 @@
     --color-gris-clar : #f2f3f4;
     --color-gris-cercar : #e9ecef;
     --color-blanc : white;
-    --color-blau-clar : #bdd8f4;
+    --color-seleccionar : #bdd8f4;
+    --color-blau-clar : #e1ebf6;
 }
 
 body {
@@ -21,10 +22,22 @@ body {
     background-color: var(--color-gris-clar);
 }
 
-.nav-link:hover {
-    background-color: var(--color-blau-clar) !important;
+.bg_blau_clar {
+    background-color: var(--color-blau-clar);
 }
 
-.negrita {
+.bg_seleccionar {
+    background-color: var(--color-seleccionar);
+}
+
+.nav-link:hover {
+    background-color: var(--color-seleccionar);
+}
+
+.negreta {
     font-weight: 900;
+}
+
+.img_primera_targeta {
+    width : 100%;
 }
