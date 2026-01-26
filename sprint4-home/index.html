@@ -29,12 +29,12 @@
                                 <i class="bi bi-lightbulb-fill text-warning fs-5"></i>
                                 <span class="fs-5 fw-bolder px-3 py-2">SELECTIO</span>
                             </a>
-                            <form class="d-flex w-100 ps-3" role="search">
+                            <form class="ps-3" role="search">
                                 <div class="input-group">
                                     <button class="btn btn-light border-light-subtle" type="button" id="search">
                                         <i class="bi bi-search text-dark"></i>
                                     </button>
-                                    <input type="text" class="form-control bg_cercar border-light-subtle rounded-0 pe-5" placeholder="Cercar producte ..."
+                                        <input type="text" class="form-control bg_cercar border-light-subtle rounded-0 pe-5" placeholder="Cercar producte ..."
                                         aria-label="Search" aria-describedby="button-search">
                                 </div>
                             </form>
@@ -51,8 +51,9 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Components</a></li>
-                                    <li><a class="dropdown-item" href="#">Prifèrics</a></li>
-                                    <li><a class="dropdown-item" href="#">Consoles</a></li>
+                                    <li><a class="dropdown-item mb-2" href="#">Perifèrics</a></li>
+                                    <li class="border-top"></li>
+                                    <li><a class="dropdown-item mt-2" href="#">Consoles</a></li>
                                     <li><a class="dropdown-item" href="#">Videojocs</a></li>
                                 </ul>
                             </li>
@@ -96,8 +97,8 @@
         
 
         <div class="row bg_gris pt-3">
-            <div class="col-12 ">
-                <div class="container-lg px-0">
+            <div class="col-12">
+                <div class="container-xxl px-4 px-xxl-0">
                     <div class="row mb-4">
                         <div class="card mb-3 mt-4 shadow-lg border-0">
                             <div class="row py-4 rounded pe-4">
@@ -165,21 +166,164 @@
                     </div>
 
                     <div class="row mb-4">
-                        <div class="card mb-3 mt-4 shadow-lg border-0 bg_blau_clar">
+                        <div class="card mb-2 mt-4 shadow-lg border-0 bg_blau_clar">
                             <div class="row py-5 rounded pe-4 ps-2">
                                 <div class="col-md-8 d-flex align-items-center">
                                     <div class="card-body pb-5">
-                                        <div class="d-flex align-items-center justify-content-center w-25 border-0 rounded-pill p-2 bg_seleccionar text-primary">
+                                        <div class="d-flex align-items-center justify-content-center w-25 border-0 rounded-pill p-2 bg_seleccionar text-primary my-3 mt-4">
                                             <i class="bi bi-clock-fill me-1"></i>
                                             OFERTA LIMITADA
                                         </div>
-                                        <h1 class="card-title negreta">Ofertes exprés de tecnologia</h1>
+                                        <h1 class="card-title negreta mb-3">Ofertes exprés de tecnologia</h1>
                                         <p class="card-text fs-5 mb-4">Aconsegueix fins un 30% de descompte en dispositius intel·ligents per a casa. Modernitza el teu llar amb la nova IA.</p>
                                         <a href="#" class="btn btn-dark fw-bold p-3">Explorar ofertes</a>
                                     </div>
                                 </div>
                                 <div class="col-md-4 ps-5">
                                     <img src="img/img-6.png" class="img-fluid rounded-4 me-3 img_primera_targeta" alt="Imatge de fons">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-12 d-flex justify-content-between align-items-center pb-2 pt-2">
+                            <h3>Tendències actuals</h3>
+                            <div>
+                                <a class="icon-link link-dark fs-4 fw-bolder" href="#">
+                                    <i class="bi bi-arrow-left"></i>
+                                </a>
+                                <a class="icon-link link-dark fs-4 ps-2 fw-bold" href="#">
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-4 g-5 mt-1 mb-5">
+                        <div class="col">
+                            <div class="card">
+                                <div class="position-relative">
+                                    <a href="#">
+                                        <img src="img/img-7.png" class="card-img-top" alt="Afegir a favorit">
+                                    </a>
+                                    <span class="position-absolute top-0 end-0 rounded-circle bg-danger m-2 mx-3 p-3 px-0 badge">
+                                        <a href="#" class="p-3">
+                                            <i class="bi bi-heart text-white"></i>
+                                        </a>
+                                        <span class="visually-hidden">favorits</span>
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="pb-3 d-flex">
+                                        <i class="bi bi-star-fill text-warning pe-2"></i>
+                                        <span class="text-primary pe-1">4.8</span>
+                                        (128)
+                                    </div>
+                                    <a href="#" class="link-underline-opacity-0 link-dark"><h5 class="card-title negreta">Sony WH-1000XM5</h5></a>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <span class="text-primary fs-3">348&euro;</span>
+                                    <button class="btn btn-primary">
+                                        <i class="bi bi-cart-plus-fill fs-4"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <div class="position-relative">
+                                    <a href="#">
+                                        <img src="img/img-8.png" class="card-img-top" alt="Afegir a favorit">
+                                    </a>
+                                    <span class="position-absolute top-0 end-0 rounded-circle bg-danger m-2 mx-3 p-3 px-0 badge">
+                                        <a href="#" class="p-3">
+                                            <i class="bi bi-heart text-white"></i>
+                                        </a>
+                                        <span class="visually-hidden">favorits</span>
+                                    </span>
+
+                                    <span class="position-absolute top-0 start-0 rounded bg-primary m-2 mx-3 p-3 px-0 badge">
+                                        <a href="#" class="p-3 link-light link-underline-opacity-0">
+                                            Novetat
+                                        </a>
+                                        <span class="visually-hidden">novetat</span>
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="pb-3 d-flex">
+                                        <i class="bi bi-star-fill text-warning pe-2"></i>
+                                        <span class="text-primary pe-1">4.9</span>
+                                        (85)
+                                    </div>
+                                    <a href="#" class="link-underline-opacity-0 link-dark"><h5 class="card-title negreta">Canon EOS R6</h5></a>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <span class="text-primary fs-3">2499&euro;</span>
+                                    <button class="btn btn-primary">
+                                        <i class="bi bi-cart-plus-fill fs-4"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <div class="position-relative">
+                                    <a href="#">
+                                        <img src="img/img-9.png" class="card-img-top" alt="Afegir a favorit">
+                                    </a>
+                                    <span class="position-absolute top-0 end-0 rounded-circle bg-danger m-2 mx-3 p-3 px-0 badge">
+                                        <a href="#" class="p-3">
+                                            <i class="bi bi-heart text-white"></i>
+                                        </a>
+                                        <span class="visually-hidden">favorits</span>
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="pb-3 d-flex">
+                                        <i class="bi bi-star-fill text-warning pe-2"></i>
+                                        <span class="text-primary pe-1">4.7</span>
+                                        (259)
+                                    </div>
+                                    <a href="#" class="link-underline-opacity-0 link-dark"><h5 class="card-title negreta">Google Nested Àudio</h5></a>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <span class="text-primary fs-3">99,99&euro;</span>
+                                    <button class="btn btn-primary">
+                                        <i class="bi bi-cart-plus-fill fs-4"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card">
+                                <div class="position-relative">
+                                    <a href="#">
+                                        <img src="img/img-10.png" class="card-img-top" alt="Afegir a favorit">
+                                    </a>
+                                    <span class="position-absolute top-0 end-0 rounded-circle bg-danger m-2 mx-3 p-3 px-0 badge">
+                                        <a href="#" class="p-3">
+                                            <i class="bi bi-heart text-white"></i>
+                                        </a>
+                                        <span class="visually-hidden">favorits</span>
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="pb-3 d-flex">
+                                        <i class="bi bi-star-fill text-warning pe-2"></i>
+                                        <span class="text-primary pe-1">4.8</span>
+                                        (173)
+                                    </div>
+                                    <a href="#" class="link-underline-opacity-0 link-dark"><h5 class="card-title negreta">Oculus Quest 2</h5></a>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <span class="text-primary fs-3">299&euro;</span>
+                                    <button class="btn btn-primary">
+                                        <i class="bi bi-cart-plus-fill fs-4"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
