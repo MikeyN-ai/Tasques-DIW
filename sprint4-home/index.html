@@ -21,15 +21,16 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 p-0">
+            <div class="col-12 p-0 pe-2 fixed-top">
                 <nav class="navbar navbar-expand-lg bg-white position-relative">
+                    <!--Header-->
                     <div class="container-fluid">
                         <div class="d-flex align-items-center">
                             <a class="navbar-brand d-flex align-items-center" href="#">
                                 <i class="bi bi-lightbulb-fill text-warning fs-5"></i>
                                 <span class="fs-5 fw-bolder px-3 py-2">SELECTIO</span>
                             </a>
-                            <form class="ps-3" role="search">
+                            <form class="ps-3 d-none d-md-block" role="search">
                                 <div class="input-group">
                                     <button class="btn btn-light border-light-subtle" type="button" id="search">
                                         <i class="bi bi-search text-dark"></i>
@@ -40,7 +41,7 @@
                             </form>
                         </div>
                         <!-- <ul class="navbar-nav ms-auto gap-lg-3 border-top border-lg-0 pt-3 pt-lg-03"> -->
-                        <ul class="navbar-nav ms-auto d-flex align-items-center me-3">
+                        <ul class="navbar-nav ms-auto d-flex align-items-center me-3 d-none d-md-flex">
                             <li class="nav-item"><a class="nav-link active" href="#">Portàtils</a></li>
                             <li class="nav-item"><a class="nav-link active" href="#">Mòbils</a></li>
 
@@ -60,7 +61,7 @@
                             <li class="nav-item"><a class="nav-link active" href="#">Ofertes</a></li>
                         </ul>
 
-                        <div class="d-flex me-4 gap-3">
+                        <div class="d-flex me-0 me-md-4 gap-3">
                             <a class="nav-link" href="#">
                                 <i class="bi bi-cart-fill fs-3 position-relative"></i>
                                 <span class="position-absolute top-40 start-10 translate-middle badge rounded-pill bg-danger">
@@ -69,7 +70,7 @@
                                 </span>
                             </a>
 
-                            <a class="nav-link" href="#"><i class="bi bi-person fs-3 px-1 "></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-person fs-3 px-1"></i></a>
 
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#menuMobile" aria-controls="menuMobile"
@@ -77,50 +78,75 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                         </div>
-                    </div>
 
-                    <div class="collapse navbar-collapse position-absolute top-100 start-0 w-100 bg-white shadow-lg z-3 px-2" id="menuMobile">
-
-                        <form class="d-flex d-lg-none my-3 w-100" role="search">
-                            <div class="input-group w-100">
-                                <button class="btn btn-outline-secondary" type="button" id="button-addon1">
-                                    <i class="bi bi-search"></i>
+                        <form class="d-flex d-lg-none w-100" role="search">
+                            <div class="input-group">
+                                <button class="btn btn-light border-light-subtle" type="button" id="search">
+                                    <i class="bi bi-search text-dark"></i>
                                 </button>
-                                <input type="text" class="form-control" placeholder="Cercar producte ..."
+                                    <input type="text" class="form-control bg_cercar border-light-subtle rounded-0 pe-5" placeholder="Cercar producte ..."
                                     aria-label="Search" aria-describedby="button-search">
                             </div>
-                        </form>             
+                        </form>
+                    </div>
+                    
+                    <!--Desplegable header-->
+                    <div class="collapse navbar-collapse position-absolute top-100 start-0 w-100 bg-white shadow-lg z-3 px-2 pb-1" id="menuMobile">
+                        <ul class="navbar-nav ms-auto px-3 d-lg-none">
+                            <li class="nav-item"><a class="nav-link active" href="#">Portàtils</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Mòbils</a></li>
+
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                                    Totes les categories
+                                </a>
+                                <ul class="dropdown-menu tot">
+                                    <li><a class="dropdown-item" href="#">Components</a></li>
+                                    <li><a class="dropdown-item mb-2" href="#">Perifèrics</a></li>
+                                    <li class="border-top"></li>
+                                    <li><a class="dropdown-item mt-2" href="#">Consoles</a></li>
+                                    <li><a class="dropdown-item" href="#">Videojocs</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link active" href="#">Ofertes</a></li>
+                        </ul>          
                     </div>
                 </nav>
             </div>
         </div>
-        
-        <div class="row bg_gris pt-3">
+
+        <!--Main-->
+        <div class="row bg_gris pt-2 mt-5">
             <div class="col-12">
-                <div class="container-xxl px-4 px-xxl-0">
-                    <div class="row mb-4">
+                <div class="container-xxl px-0 px-md-4 px-xxl-0 mt-5 mt-lg-4">
+                    <!--Primera targeta-->
+                    <div class="row mb-4 px-0 pt-2">
                         <div class="card mb-3 mt-4 shadow-lg border-0">
-                            <div class="row py-4 rounded pe-4">
-                                <div class="col-md-6 d-flex align-items-center">
+                            <div class="row py-0 py-md-4 rounded pe-0 pe-md-4 gx-3">
+                                <div class="col-md-6 d-flex align-items-center ps-3 ps-lg-1 pe-2 pb-4">
                                     <div class="card-body">
                                         <h5 class="card-title text-primary">Novetats</h5>
                                         <h1 class="lh-1 titol_primera_targeta bolder negreta">El futur de la tecnologia està ací</h1>
-                                        <p class="card-text fs-5 mb-4">Actualitza't hui amb els últims accesoris d'alt rendiment amb dissenys moderns.</p>
+                                        <p class="card-text fs-5 mb-4 pe-1">Actualitza't hui amb els últims accesoris d'alt rendiment amb dissenys moderns.</p>
                                         <a href="#" class="btn btn-primary fw-bold px-3 py-2">Comprar</a>
                                     </div>
                                 </div>
-                                <div class="col-md-6 ps-5">
-                                    <img src="img/img-1.png" class="img-fluid rounded-end me-3 img_primera_targeta" alt="Imatge de fons">
+                                <div class="col-md-6 ps-md-5 px-4 px-md-0">
+                                    <div class="px-2 px-lg-0 pe-0 pe-lg-2 pb-4 pb-lg-0">
+                                        <img src="img/img-1.png" class="img-fluid rounded-end w-100" alt="Imatge de fons">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!--Comprar per categoria-->
                     <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-between align-items-center pb-2 pt-2">
+                        <div class="col-12 d-flex justify-content-between align-items-start pb-2 pt-2">
                             <h3>Comprar per categoria</h3>
-                            <a class="icon-link" href="#">
-                                Veure totes
+                            <a class="icon-link pt-1 text-decoration-none" href="#">
+                                <span>Veure totes</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>
@@ -164,6 +190,7 @@
                         </div>
                     </div>
 
+                    <!--Oferta limitada-->
                     <div class="row mb-4">
                         <div class="card mb-2 mt-4 shadow-lg border-0 bg_blau_clar">
                             <div class="row py-5 rounded pe-4 ps-2">
@@ -185,6 +212,7 @@
                         </div>
                     </div>
 
+                    <!--Tendencies-->
                     <div class="row mb-3">
                         <div class="col-12 d-flex justify-content-between align-items-center pb-2 pt-2">
                             <h3>Tendències actuals</h3>
@@ -328,9 +356,9 @@
                         </div>
                     </div>
 
-
+                    <!--Característiques-->
                     <div class="row mb-5 pt-4">
-                        <div class="col-md-4 col-12 text-center pt-2 pt-md-1">
+                        <div class="col-md-4 col-12 text-center pt-2 pt-md-1 ps-0">
                                 <i class="bi bi-truck fs-4 p-4 bg_seleccionar rounded-circle"></i>
                                 <h4 class="pt-5">Enviament gratuït</h4>
                                 <p>* A partir de 50 €</p>
@@ -342,7 +370,7 @@
                                 <p>100% pagament segur amb encriptació SSL</p>
                         </div>
                         
-                        <div class="col-md-4 col-12 text-center pt-5 pt-md-1">
+                        <div class="col-md-4 col-12 text-center pt-5 pt-md-1 ps-4">
                             <i class="bi bi-headset fs-4 p-4 bg_seleccionar rounded-circle"></i>
                                 <h4 class="pt-5">Suport 24/7</h4>
                                 <p>Un equip dedicat a ajudar-te en qualsevol moment</p>
@@ -351,49 +379,66 @@
                 </div>
             </div>
         </div>
+
+        <!--Footer-->
         <div class="row mt-5">
-            <div class="col-lg-3 col-md-6 col-12">
-                <div class="d-flex align-items-center">
-                    <i class="bi bi-lightbulb-fill text-warning fs-3"></i>
-                    <span class="fs-3 px-3 py-2">SELECTIO</span>
+             <div class="col-12">
+                <div class="container-xxl px-0 px-sm-4 px-xxl-0">
+                    <div class="row pt-2 pt-sm-4 pb-3 text-center text-sm-start">
+                        <div class="col-lg-3 col-md-6 col-12 ps-4 pb-3 pb-sm-0">
+                            <div class="d-flex align-items-center pb-3 justify-content-center justify-content-sm-start">
+                                <i class="bi bi-lightbulb-fill text-warning fs-3"></i>
+                                <span class="fs-3 px-2">SELECTIO</span>
+                            </div>
+                            <span class="text-secondary pe-3">La teua tenda online per a les últimes novetats en tecnologia. Millora les teues destreses digitals hui.</span>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 pt-5 pt-sm-0 ps-2">
+                            <h2 class="fs-3 px-3 pt-1 fw-normal">TENDA</h2>
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action border-0">Portàtils</a>
+                                <a href="#" class="list-group-item list-group-item-action border-0">Mòbils</a>
+                                <a href="#" class="list-group-item list-group-item-action border-0">Accesoris</a>
+                                <a href="#" class="list-group-item list-group-item-action border-0">Ofertes</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 pt-5 pt-sm-0 ps-2">
+                            <h2 class="fs-3 px-3 pt-1  fw-normal">POLÍTIQUES</h2>
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action border-0">Condicions generals</a>
+                                <a href="#" class="list-group-item list-group-item-action border-0">Política de privacitat</a>
+                                <a href="#" class="list-group-item list-group-item-action border-0">Preferències de cookies</a>
+                                <a href="#" class="list-group-item list-group-item-action border-0">Avís legal</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 pt-5 pt-sm-0 ps-2">
+                            <h2 class="fs-3 px-3 pt-1  fw-normal">XARXES SOCIALS</h2>
+                            <div class="list-group list-group-flush">
+                                <a href="https://www.facebook.com" class="list-group-item list-group-item-action border-0 d-flex align-items-center justify-content-center justify-content-sm-start">
+                                    <i class="bi bi-facebook fs-2 pe-2"></i>
+                                    <span class="d-none d-sm-block">Facebook</span>
+                                </a>
+                                <a href="https://es.linkedin.com/" class="list-group-item list-group-item-action border-0 d-flex align-items-center justify-content-center justify-content-sm-start">
+                                    <i class="bi bi-linkedin fs-2 pe-2"></i>
+                                    <span class="d-none d-sm-block">Linkedin</span>
+                                </a>
+                                <a href="https://www.instagram.com/" class="list-group-item list-group-item-action border-0 d-flex align-items-center justify-content-center justify-content-sm-start">
+                                    <i class="bi bi-instagram fs-2 pe-2"></i>
+                                    <span class="d-none d-sm-block">Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row border-top pt-3">
+                        <div class="col-12 text-center">
+                            <p class="small">@ 2025 Selectio</p>
+                        </div>
+                    </div>
                 </div>
-                La teua tenda online per a les últimes novetats en tecnologia. Millora les teues destreses digitals hui.
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12">
-                <span class="fs-3 px-3 py-2">TENDA</span>
-                <a href="#" class="d-block">Portàtils</a>
-                <a href="#" class="d-block">Mòbils</a>
-                <a href="#" class="d-block">Accesoris</a>
-                <a href="#" class="d-block">Ofertes</a>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12">
-                <span class="fs-3 px-3 py-2">POLÍTIQUES</span>
-                <a href="#" class="d-block">Condicions generals</a>
-                <a href="#" class="d-block">Política de privacitat</a>
-                <a href="#" class="d-block">Preferències de cookies</a>
-                <a href="#" class="d-block">Avís legal</a>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12">
-                <span class="fs-3 px-3 py-2">XARXES SOCIALS</span>
-                <a href="#" class="d-block">
-                    Facebook
-                </a>
-                <a href="#" class="d-block">
-                    Linkedin
-                </a>
-                <a href="#" class="d-block">
-                    Instagram
-                </a>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 text-center">
-                <p>@ 2025 Selectio</p>
-            </div>
+             </div>
         </div>
     </div>
 </body>
