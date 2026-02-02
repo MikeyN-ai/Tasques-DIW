@@ -21,27 +21,27 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 p-0 pe-2 fixed-top">
+            <div class="col-12 p-0 pe-0 fixed-top pe-2 pe-lg-0">
                 <nav class="navbar navbar-expand-lg bg-white position-relative">
                     <!--Header-->
                     <div class="container-fluid">
                         <div class="d-flex align-items-center">
                             <a class="navbar-brand d-flex align-items-center" href="#">
                                 <i class="bi bi-lightbulb-fill text-warning fs-5"></i>
-                                <span class="fs-5 fw-bolder px-3 py-2">SELECTIO</span>
+                                <span class="fs-5 fw-bolder ps-3 pe-1 py-2">SELECTIO</span>
                             </a>
-                            <form class="ps-3 d-none d-md-block" role="search">
+                            <form class="ps-3 ps-lg-0 d-none d-lg-block" role="search">
                                 <div class="input-group">
                                     <button class="btn btn-light border-light-subtle" type="button" id="search">
                                         <i class="bi bi-search text-dark"></i>
                                     </button>
-                                        <input type="text" class="form-control bg_cercar border-light-subtle rounded-0 pe-5" placeholder="Cercar producte ..."
+                                        <input type="text" class="form-control bg_cercar border-light-subtle rounded-0 pe-0 pe-xl-5" placeholder="Cercar producte ..."
                                         aria-label="Search" aria-describedby="button-search">
                                 </div>
                             </form>
                         </div>
                         <!-- <ul class="navbar-nav ms-auto gap-lg-3 border-top border-lg-0 pt-3 pt-lg-03"> -->
-                        <ul class="navbar-nav ms-auto d-flex align-items-center me-3 d-none d-md-flex">
+                        <ul class="navbar-nav ms-auto d-flex align-items-center me-3 d-none d-xl-flex">
                             <li class="nav-item"><a class="nav-link active" href="#">Portàtils</a></li>
                             <li class="nav-item"><a class="nav-link active" href="#">Mòbils</a></li>
 
@@ -91,9 +91,9 @@
                     </div>
                     
                     <!--Desplegable header-->
-                    <div class="collapse navbar-collapse position-absolute top-100 start-0 w-100 bg-white shadow-lg z-3 px-2 pb-1" id="menuMobile">
-                        <ul class="navbar-nav ms-auto px-3 d-lg-none">
-                            <li class="nav-item"><a class="nav-link active" href="#">Portàtils</a></li>
+                    <div class="collapse navbar-collapse position-absolute top-100 start-0 w-100 bg-white navegacio_mitjana z-3 px-2 px-lg-0 pb-1 pb-lg-0" id="menuMobile">
+                        <ul class="navbar-nav ms-auto px-3 d-flex d-xl-none w-100 px-lg-0">
+                            <li class="nav-item align"><a class="nav-link active" href="#">Portàtils</a></li>
                             <li class="nav-item"><a class="nav-link active" href="#">Mòbils</a></li>
 
                             <!-- Dropdown -->
@@ -117,18 +117,18 @@
         </div>
 
         <!--Main-->
-        <div class="row bg_gris pt-2 mt-5">
+        <div class="row bg_gris pt-2 pt-5 px-1 px-md-4 px-lg-0">
             <div class="col-12">
-                <div class="container-xxl px-0 px-md-4 px-xxl-0 mt-5 mt-lg-4">
+                <div class="container-xxl px-0 px-md-5 px-lg-3 px-xl-4 px-xxl-0 mt-5 mt-lg-4">
                     <!--Primera targeta-->
-                    <div class="row mb-4 px-0 pt-2">
+                    <div class="row mb-4 pt-2">
                         <div class="card mb-3 mt-4 shadow-lg border-0">
-                            <div class="row py-0 py-md-4 rounded pe-0 pe-md-4 gx-3">
-                                <div class="col-md-6 d-flex align-items-center ps-3 ps-lg-1 pe-2 pb-4">
-                                    <div class="card-body">
+                            <div class="row py-0 py-md-4 rounded pe-0 pe-md-4">
+                                <div class="col-md-6 d-flex align-items-center ps-0 ps-lg-2 pt-2 pe-0">
+                                    <div class="card-body pe-0 ps-md-0 ps-md-5 ps-lg-3">
                                         <h5 class="card-title text-primary">Novetats</h5>
-                                        <h1 class="lh-1 titol_primera_targeta bolder negreta">El futur de la tecnologia està ací</h1>
-                                        <p class="card-text fs-5 mb-4 pe-1">Actualitza't hui amb els últims accesoris d'alt rendiment amb dissenys moderns.</p>
+                                        <h1 class="lh-1 titol_primera_targeta fw-bolder">El futur de la tecnologia està ací</h1>
+                                        <p class="card-text fs-5 mb-4 text-light-emphasis">Actualitza't hui amb els últims accesoris d'alt rendiment amb dissenys moderns.</p>
                                         <a href="#" class="btn btn-primary fw-bold px-3 py-2">Comprar</a>
                                     </div>
                                 </div>
@@ -144,7 +144,10 @@
                     <!--Comprar per categoria-->
                     <div class="row mb-2">
                         <div class="col-12 d-flex justify-content-between align-items-start pb-2 pt-2">
-                            <h3>Comprar per categoria</h3>
+                            <h3>
+                                <span>Comprar per</span>
+                                <span class="d-block d-md-inline">categoria</span>
+                            </h3>
                             <a class="icon-link pt-1 text-decoration-none" href="#">
                                 <span>Veure totes</span>
                                 <i class="bi bi-arrow-right"></i>
@@ -155,7 +158,9 @@
                     <div class="row bg-white rounded shadow-lg p-2 pt-5 mb-3">
                         <div class="col-lg-3 col-md-6 col-12">
                             <div class="card border-0 pt-4">
-                                <img src="img/img-2.png" class="card-img-top" alt="Portàtils">
+                                <a href="#">
+                                    <img src="img/img-2.png" class="card-img-top" alt="Portàtils">
+                                </a>
                                 <div class="card-body text-center pt-4">
                                     <p class="card-text fw-bold">Portàtils</p>
                                 </div>
@@ -164,7 +169,9 @@
 
                         <div class="col-lg-3 col-md-6 col-12">
                             <div class="card border-0 pt-4">
-                                <img src="img/img-3.png" class="card-img-top" alt="Mòbils">
+                                <a href="#">
+                                    <img src="img/img-3.png" class="card-img-top" alt="Mòbils">
+                                </a>
                                 <div class="card-body text-center pt-4">
                                     <p class="card-text fw-bold">Mòbils</p>
                                 </div>
@@ -173,7 +180,9 @@
 
                         <div class="col-lg-3 col-md-6 col-12">
                             <div class="card border-0 pt-4">
-                                <img src="img/img-4.png" class="card-img-top" alt="Audio">
+                                <a href="#">
+                                    <img src="img/img-4.png" class="card-img-top" alt="Audio">
+                                </a>
                                 <div class="card-body text-center pt-4">
                                     <p class="card-text fw-bold">Audio</p>
                                 </div>
@@ -182,7 +191,9 @@
 
                         <div class="col-lg-3 col-md-6 col-12">
                             <div class="card border-0 pt-4">
-                                <img src="img/img-5.png" class="card-img-top" alt="Wearables">
+                                <a href="#">
+                                    <img src="img/img-5.png" class="card-img-top" alt="Wearables">
+                                </a>
                                 <div class="card-body text-center pt-4">
                                     <p class="card-text fw-bold">Wearables</p>
                                 </div>
@@ -195,12 +206,12 @@
                         <div class="card mb-2 mt-4 shadow-lg border-0 bg_blau_clar">
                             <div class="row py-5 rounded pe-4 ps-2">
                                 <div class="col-md-8 d-flex align-items-center">
-                                    <div class="card-body pb-5">
+                                    <div class="card-body pb-4 pt-0">
                                         <div class="d-flex align-items-center justify-content-center w-25 border-0 rounded-pill p-2 bg_seleccionar text-primary my-3 mt-4 tot">
                                             <i class="bi bi-clock-fill me-1"></i>
                                             OFERTA LIMITADA
                                         </div>
-                                        <h1 class="card-title negreta mb-3">Ofertes exprés de tecnologia</h1>
+                                        <h1 class="card-title fw-bolder mb-3">Ofertes exprés de tecnologia</h1>
                                         <p class="card-text fs-5 mb-4">Aconsegueix fins un 30% de descompte en dispositius intel·ligents per a casa. Modernitza el teu llar amb la nova IA.</p>
                                         <a href="#" class="btn btn-dark fw-bold p-3">Explorar ofertes</a>
                                     </div>
@@ -215,7 +226,10 @@
                     <!--Tendencies-->
                     <div class="row mb-3">
                         <div class="col-12 d-flex justify-content-between align-items-center pb-2 pt-2">
-                            <h3>Tendències actuals</h3>
+                            <h3>
+                                <span>Tendències</span>
+                                <span class="d-block d-md-inline">actuals</span>
+                            </h3>
                             <div>
                                 <a class="icon-link link-dark fs-4 fw-bolder" href="#">
                                     <i class="bi bi-arrow-left"></i>
@@ -247,7 +261,7 @@
                                         <span class="text-primary pe-1">4.8</span>
                                         (128)
                                     </div>
-                                    <a href="#" class="link-underline-opacity-0 link-dark"><h5 class="card-title negreta">Sony WH-1000XM5</h5></a>
+                                    <a href="#" class="link-underline-opacity-0 link-dark"><h5 class="card-title fw-bolder">Sony WH-1000XM5</h5></a>
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center">
                                     <span class="text-primary fs-3">348&euro;</span>
@@ -284,7 +298,7 @@
                                         <span class="text-primary pe-1">4.9</span>
                                         (85)
                                     </div>
-                                    <a href="#" class="link-underline-opacity-0 link-dark"><h5 class="card-title negreta">Canon EOS R6</h5></a>
+                                    <a href="#" class="link-underline-opacity-0 link-dark"><h5 class="card-title fw-bolder">Canon EOS R6</h5></a>
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center">
                                     <span class="text-primary fs-3">2499&euro;</span>
@@ -314,7 +328,7 @@
                                         <span class="text-primary pe-1">4.7</span>
                                         (259)
                                     </div>
-                                    <a href="#" class="link-underline-opacity-0 link-dark"><h5 class="card-title negreta">Google Nested Àudio</h5></a>
+                                    <a href="#" class="link-underline-opacity-0 link-dark"><h5 class="card-title fw-bolder">Google Nested Àudio</h5></a>
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center">
                                     <span class="text-primary fs-3">99,99&euro;</span>
@@ -344,7 +358,7 @@
                                         <span class="text-primary pe-1">4.8</span>
                                         (173)
                                     </div>
-                                    <a href="#" class="link-underline-opacity-0 link-dark"><h5 class="card-title negreta">Oculus Quest 2</h5></a>
+                                    <a href="#" class="link-underline-opacity-0 link-dark"><h5 class="card-title fw-bolder">Oculus Quest 2</h5></a>
                                 </div>
                                 <div class="card-footer d-flex justify-content-between align-items-center">
                                     <span class="text-primary fs-3">299&euro;</span>
@@ -358,7 +372,7 @@
 
                     <!--Característiques-->
                     <div class="row mb-5 pt-4">
-                        <div class="col-md-4 col-12 text-center pt-2 pt-md-1 ps-0">
+                        <div class="col-md-4 col-12 text-center pt-2 pt-md-1 p-0">
                                 <i class="bi bi-truck fs-4 p-4 bg_seleccionar rounded-circle"></i>
                                 <h4 class="pt-5">Enviament gratuït</h4>
                                 <p>* A partir de 50 €</p>
@@ -370,7 +384,7 @@
                                 <p>100% pagament segur amb encriptació SSL</p>
                         </div>
                         
-                        <div class="col-md-4 col-12 text-center pt-5 pt-md-1 ps-4">
+                        <div class="col-md-4 col-12 text-center pt-5 pt-md-1 ps-3 ps-lg-4">
                             <i class="bi bi-headset fs-4 p-4 bg_seleccionar rounded-circle"></i>
                                 <h4 class="pt-5">Suport 24/7</h4>
                                 <p>Un equip dedicat a ajudar-te en qualsevol moment</p>
@@ -403,7 +417,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-12 pt-5 pt-sm-0 ps-2">
+                        <div class="col-lg-3 col-md-6 col-12 pt-5 pt-lg-0 ps-2">
                             <h2 class="fs-3 px-3 pt-1  fw-normal">POLÍTIQUES</h2>
                             <div class="list-group list-group-flush">
                                 <a href="#" class="list-group-item list-group-item-action border-0">Condicions generals</a>
@@ -413,8 +427,8 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-12 pt-5 pt-sm-0 ps-2">
-                            <h2 class="fs-3 px-3 pt-1  fw-normal">XARXES SOCIALS</h2>
+                        <div class="col-lg-3 col-md-6 col-12 pt-5 pt-lg-0 ps-2">
+                            <h2 class="fs-3 px-3 pt-1 fw-normal">XARXES SOCIALS</h2>
                             <div class="list-group list-group-flush">
                                 <a href="https://www.facebook.com" class="list-group-item list-group-item-action border-0 d-flex align-items-center justify-content-center justify-content-sm-start">
                                     <i class="bi bi-facebook fs-2 pe-2"></i>

@@ -33,17 +33,12 @@ body {
 .nav-link:hover {
     background-color: var(--color-seleccionar);
 }
-
-.negreta {
-    font-weight: 900;
-}
-
-.img_primera_targeta {
-    width : 100%;
+.navegacio_mitjana {
+    box-shadow: 3px 1px 10px #8c8c8c;
 }
 
 /* Si l'ample de la pantalla es menor o igual a 767px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1200px) {
 
     .tot {
         width: 100% !important;
