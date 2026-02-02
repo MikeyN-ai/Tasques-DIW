@@ -15,14 +15,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <script src="js/common.js" defer></script>
+    <!-- <script src="js/common.js" defer></script> -->
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 p-0 pe-0 fixed-top pe-2 pe-lg-0">
-                <nav class="navbar navbar-expand-lg bg-white position-relative">
+                <nav class="navbar navbar-expand-lg bg-white position-relative" aria-label="Navegació principal">
                     <!--Header-->
                     <div class="container-fluid">
                         <div class="d-flex align-items-center">
@@ -30,13 +30,13 @@
                                 <i class="bi bi-lightbulb-fill text-warning fs-5"></i>
                                 <span class="fs-5 fw-bolder ps-3 pe-1 py-2">SELECTIO</span>
                             </a>
-                            <form class="ps-3 ps-lg-0 d-none d-lg-block" role="search">
+                            <form class="ps-3 ps-lg-0 d-none d-lg-block" role="searchDesktop">
                                 <div class="input-group">
                                     <button class="btn btn-light border-light-subtle" type="button" id="search">
                                         <i class="bi bi-search text-dark"></i>
                                     </button>
                                         <input type="text" class="form-control bg_cercar border-light-subtle rounded-0 pe-0 pe-xl-5" placeholder="Cercar producte ..."
-                                        aria-label="Search" aria-describedby="button-search">
+                                        aria-label="Search" aria-describedby="search" maxlength="25">
                                 </div>
                             </form>
                         </div>
@@ -64,7 +64,7 @@
                         <div class="d-flex me-0 me-md-4 gap-3">
                             <a class="nav-link" href="#">
                                 <i class="bi bi-cart-fill fs-3 position-relative"></i>
-                                <span class="position-absolute top-40 start-10 translate-middle badge rounded-pill bg-danger">
+                                <span class="position-absolute translate-middle badge rounded-pill bg-danger">
                                     2
                                     <span class="visually-hidden">unread messages</span>
                                 </span>
@@ -81,11 +81,11 @@
 
                         <form class="d-flex d-lg-none w-100" role="search">
                             <div class="input-group">
-                                <button class="btn btn-light border-light-subtle" type="button" id="search">
+                                <button class="btn btn-light border-light-subtle" type="button" id="searchMobile">
                                     <i class="bi bi-search text-dark"></i>
                                 </button>
                                     <input type="text" class="form-control bg_cercar border-light-subtle rounded-0 pe-5" placeholder="Cercar producte ..."
-                                    aria-label="Search" aria-describedby="button-search">
+                                    aria-label="Search" aria-describedby="button-search" maxlength="25">
                             </div>
                         </form>
                     </div>
@@ -134,7 +134,7 @@
                                 </div>
                                 <div class="col-md-6 ps-md-5 px-4 px-md-0">
                                     <div class="px-2 px-lg-0 pe-0 pe-lg-2 pb-4 pb-lg-0">
-                                        <img src="img/img-1.png" class="img-fluid rounded-end w-100" alt="Imatge de fons">
+                                        <img src="img/img-1.png" class="img-fluid rounded-end w-100" alt="Novetats">
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 ps-5">
-                                    <img src="img/img-6.png" class="img-fluid rounded-4 me-3 img_primera_targeta" alt="Imatge de fons">
+                                    <img src="img/img-6.png" class="img-fluid rounded-4 me-3 img_primera_targeta" alt="Oferta limitada imatge">
                                 </div>
                             </div>
                         </div>
@@ -246,9 +246,9 @@
                             <div class="card">
                                 <div class="position-relative">
                                     <a href="#">
-                                        <img src="img/img-7.png" class="card-img-top" alt="Afegir a favorit">
+                                        <img src="img/img-7.png" class="card-img-top" alt="Sony WH-1000XM5">
                                     </a>
-                                    <span class="position-absolute top-0 end-0 rounded-circle bg-danger m-2 mx-3 p-3 px-0 badge">
+                                    <span class="position-absolute top-0 end-0 rounded-circle bg-danger m-2 mx-3 p-3 px-0 badge" aria-label="Afegir a favorits">
                                         <a href="#" class="p-3">
                                             <i class="bi bi-heart text-white"></i>
                                         </a>
@@ -276,16 +276,16 @@
                             <div class="card">
                                 <div class="position-relative">
                                     <a href="#">
-                                        <img src="img/img-8.png" class="card-img-top" alt="Afegir a favorit">
+                                        <img src="img/img-8.png" class="card-img-top" alt="Canon EOS R6">
                                     </a>
-                                    <span class="position-absolute top-0 end-0 rounded-circle bg-danger m-2 mx-3 p-3 px-0 badge">
+                                    <span class="position-absolute top-0 end-0 rounded-circle bg-danger m-2 mx-3 p-3 px-0 badge" aria-label="Afegir a favorits">
                                         <a href="#" class="p-3">
                                             <i class="bi bi-heart text-white"></i>
                                         </a>
                                         <span class="visually-hidden">favorits</span>
                                     </span>
 
-                                    <span class="position-absolute top-0 start-0 rounded bg-primary m-2 mx-3 p-3 px-0 badge">
+                                    <span class="position-absolute top-0 start-0 rounded bg-primary m-2 mx-3 p-3 px-0 badge" aria-label="Afegir a favorits">
                                         <a href="#" class="p-3 link-light link-underline-opacity-0">
                                             Novetat
                                         </a>
@@ -313,9 +313,9 @@
                             <div class="card">
                                 <div class="position-relative">
                                     <a href="#">
-                                        <img src="img/img-9.png" class="card-img-top" alt="Afegir a favorit">
+                                        <img src="img/img-9.png" class="card-img-top" alt="Google Nested Àudio">
                                     </a>
-                                    <span class="position-absolute top-0 end-0 rounded-circle bg-danger m-2 mx-3 p-3 px-0 badge">
+                                    <span class="position-absolute top-0 end-0 rounded-circle bg-danger m-2 mx-3 p-3 px-0 badge" aria-label="Afegir a favorits">
                                         <a href="#" class="p-3">
                                             <i class="bi bi-heart text-white"></i>
                                         </a>
@@ -343,7 +343,7 @@
                             <div class="card">
                                 <div class="position-relative">
                                     <a href="#">
-                                        <img src="img/img-10.png" class="card-img-top" alt="Afegir a favorit">
+                                        <img src="img/img-10.png" class="card-img-top" alt="Oculus Quest 2">
                                     </a>
                                     <span class="position-absolute top-0 end-0 rounded-circle bg-danger m-2 mx-3 p-3 px-0 badge">
                                         <a href="#" class="p-3">
