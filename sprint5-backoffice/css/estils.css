@@ -1,0 +1,50 @@
+:root {
+    --color-blanc: #e8f1f9;
+    --color-gris-clar: #e8eaed;
+    --color-negre: #212529;
+}
+
+body {
+    font-family: "Hind Vadodara", sans-serif;
+}
+
+.bg-blau-clar {
+    background-color: var(--color-blanc);
+}
+
+.foto_perfil {
+    width: 132px;
+}
+
+.bg-gris-clar {
+    background-color: var(--color-gris-clar) !important;
+}
+
+.menu_lateral:hover {
+    background-color: var(--color-gris-clar) !important;
+    color: var(--color-negre) !important;
+}
+
+.w-55 {
+    width: 55% !important;
+}
+
+.w-45 {
+    width: 45% !important;
+}
+
+.w-35 {
+    width: 35% !important;
+}
+
+.w-30 {
+    width: 30% !important;  
+}
+
+.w-15 {
+    width: 15% !important;
+}
+
+.w-10 {
+    width: 10% !important;
+}
