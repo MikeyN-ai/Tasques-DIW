@@ -48,3 +48,11 @@ body {
 .w-10 {
     width: 10% !important;
 }
+
+.altura_progres {
+    height: 25px;
+}
+
+.w-280 {
+    width: 280px;
+}

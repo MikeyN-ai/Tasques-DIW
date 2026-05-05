@@ -12,6 +12,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
     defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap"
@@ -22,7 +24,7 @@
   <div class="container-fluid bg-blau-clar">
     <div class="row ms-0">
       <div class="col-2 p-0">
-        <div class="bg-white d-flex flex-column align-items-center pt-4 shadow-lg h-100">
+        <div class="bg-white d-flex flex-column align-items-center pt-4  h-100">
           <img src="img/persona1.png" alt="Foto de perfil" class="foto_perfil rounded-circle">
           <span class="fw-bold fs-5 d-none d-lg-flex">Rosa Risa</span>
           <span class="small d-none d-lg-flex">SecOp Nivell2</span>
@@ -69,23 +71,23 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 p-0">
-              <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <nav class="navbar navbar-expand-lg bg-white">
                 <div class="container-fluid px-2">
-                  <a class="navbar-brand fs-4 text-secondary fw-medium ps-2 py-3 d-none d-md-flex" href="#">Centre de
-                    control de
-                    seguretat activa</a>
+                  <a class="navbar-brand fs-4 text-secondary fw-medium ps-2 py-3 d-none d-md-flex" href="#">
+                    Centre de control de seguretat activa
+                  </a>
 
                   <div class="d-flex justify-content-center justify-content-md-end align-items-center m-auto m-md-0">
-                    <a href="#" class="text-decoration-none">
-                      <span class="text-danger pe-3">
+                    <a href="#" class="text-decoration-none pe-3 border-end">
+                      <span class="text-danger">
                         <i class="bi bi-clock pe-1"></i>
                         10:52:25 +1 GMT
                       </span>
                     </a>
 
-                    <div class="vr my-2"></div>
 
-                    <a href="#" class="text-decoration-none" data-bs-toggle="collapse"
+
+                    <!--<a href="#" class="text-decoration-none" data-bs-toggle="collapse"
                       data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                       aria-expanded="false" aria-label="Toggle navigation">
                       <div class="position-relative pe-2 ps-4">
@@ -95,7 +97,47 @@
                           <span class="visually-hidden">unread messages</span>
                         </span>
                       </div>
-                    </a>
+                    </a>-->
+
+                    <div class="dropdown ps-2">
+                      <button class="btn btn-link pe-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="position-relative">
+                          <i class="bi bi-bug-fill fs-4 text-secondary pe-2"></i>
+                          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
+                            <span>99+</span>
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </div>
+                      </button>
+
+                      <div class="dropdown-menu dropdown-menu-end p-0 w-280">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <div class="card">
+                              <img src="img/ssh.jpg" class="card-img-top" alt="Atac ssh">
+                              <div class="card-body">
+                                <h3>SHH força bruta</h3>
+                              </div>
+                              <div class="card-footer">
+                                <span class="small fst-italic">28/01/20XX 11:28:12</span>
+                              </div>
+                            </div>
+                            <div class="card mt-4">
+                              <img src="img/ddos.jpeg" class="card-img-top" alt="Atac ssh">
+                              <div class="card-body">
+                                <h3>DDoS</h3>
+                              </div>
+                              <div class="card-footer">
+                                <span class="small fst-italic">28/01/20XX 11:28:42</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-footer text-end">
+                            <a href="#">Veure més</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
                     <div class="collapse" id="navbarToggleExternalContent">
                       <div class="position-absolute end-0 top-100 z-1">
@@ -127,8 +169,8 @@
                       </div>
                     </div>
 
-                    <a href="#" class="text-decoration-none">
-                      <i class="bi bi-box-arrow-right fs-4 text-secondary pe-3 ps-4"></i>
+                    <a href="#" class="text-decoration-none px-3">
+                      <i class="bi bi-box-arrow-right fs-4 text-secondary"></i>
                     </a>
                   </div>
                 </div>
@@ -141,7 +183,7 @@
               <div class="container-fluid px-5">
                 <div class="row pt-4">
                   <div class="col-12 col-md-6 col-lg-4 px-3">
-                    <div class="card">
+                    <div class="card shadow border-1 rounded-3">
                       <div class="card-header fs-4 d-flex align-items-center">
                         <i class="bi bi-shield-exclamation pe-2 py-1"></i>
                         Nº atacs
@@ -153,7 +195,7 @@
                       </div>
                     </div>
 
-                    <div class="card mt-4">
+                    <div class="card mt-4 shadow border-1 rounded-3">
                       <div class="card-header fs-4 d-flex align-items-center">
                         <i class="bi bi-activity pe-2 py-1"></i>
                         Evolució
@@ -163,90 +205,100 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-4 px-3 pt-4 pt-md-0">
-                    <div class="card">
+
+                  <div class="col-12 col-md-6 col-lg-4 px-1 pt-4 pt-md-0">
+                    <div class="card shadow border-1 rounded-3">
                       <div class="card-header fs-4 d-flex align-items-center">
                         <i class="bi bi-compass pe-2 py-1"></i>
                         Atacs per continent
                       </div>
                       <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <canvas id="pie-chart" style="position: relative; height:100vh; width:50vw"></canvas>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-4 pt-4 pt-lg-0">
-                    <div class="card">
+                  <div class="col-12 col-lg-4 pt-4 px-1 pt-lg-0">
+                    <div class="card shadow border-1 rounded-3">
                       <div class="card-header fs-4 d-flex align-items-center">
                         <i class="bi bi-speedometer2 pe-2 py-1"></i>
                         % Activitat
                       </div>
-                      <div class="card-body">
-                        <div class="progress-stacked rounded-0 rounded-end-1 mb-3">
-                          <div class="progress w-35" role="progressbar" aria-label="Segment one" aria-valuenow="15"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-success">35%</div>
-                          </div>
-                          <div class="progress w-30" role="progressbar" aria-label="Segment two" aria-valuenow="30"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-info py-2">30%</div>
+                      <div class="card-body m-0 py-4">
+
+                        <!--Primera linea de progres-->
+                        <div class="d-flex align-items-top mb-2">
+                          <span class="small px-3"><small>ssh</small></span>
+                          <div class="progress-stacked rounded-0 rounded-end-1 altura_progres w-100">
+                            <div class="progress w-35 altura_progres" role="progressbar" aria-label="Segment one"
+                              aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-success">35%</div>
+                            </div>
+                            <div class="progress w-30 altura_progres" role="progressbar" aria-label="Segment two"
+                              aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-info">30%</div>
+                            </div>
                           </div>
                         </div>
 
-                        <div class="progress-stacked rounded-0 rounded-end-1">
-                          <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 15%">
-                            <div class="progress-bar">asd</div>
-                          </div>
-                          <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                            <div class="progress-bar bg-success">asd</div>
-                          </div>
-                          <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                            <div class="progress-bar bg-info">asd</div>
-                          </div>
-                        </div>
-
-                        <div class="progress-stacked rounded-0 rounded-end-1">
-                          <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 15%">
-                            <div class="progress-bar">asd</div>
-                          </div>
-                          <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                            <div class="progress-bar bg-success">asd</div>
-                          </div>
-                          <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                            <div class="progress-bar bg-info">asd</div>
+                        <!--Segona linea de progres-->
+                        <div class="d-flex align-items-top mb-2">
+                          <span class="small px-3"><small>ftp</small></span>
+                          <div class="progress-stacked rounded-0 rounded-end-1 altura_progres w-100">
+                            <div class="progress w-55 altura_progres" role="progressbar" aria-label="Segment one"
+                              aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-warning py-2">55%</div>
+                            </div>
+                            <div class="progress w-45 altura_progres" role="progressbar" aria-label="Segment two"
+                              aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-danger">45%</div>
+                            </div>
                           </div>
                         </div>
 
-                        <div class="progress-stacked rounded-0 rounded-end-1">
-                          <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 15%">
-                            <div class="progress-bar">asd</div>
-                          </div>
-                          <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                            <div class="progress-bar bg-success">asd</div>
-                          </div>
-                          <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                            <div class="progress-bar bg-info">asd</div>
+                        <!--Tercera linea de progres-->
+                        <div class="d-flex align-items-top mb-2">
+                          <span class="small px-3"><small>ntp</small></span>
+                          <div class="progress-stacked rounded-0 rounded-end-1 altura_progres w-100">
+                            <div class="progress w-15 altura_progres" role="progressbar" aria-label="Segment one"
+                              aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-secondary">15%</div>
+                            </div>
+                            <div class="progress w-10 altura_progres" role="progressbar" aria-label="Segment two"
+                              aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-primary">10%</div>
+                            </div>
                           </div>
                         </div>
+
+                        <!--Quarta linea de progres-->
+                        <div class="d-flex align-items-top mb-2">
+                          <span class="small px-3"><small>dns</small></span>
+                          <div class="progress-stacked rounded-0 rounded-end-1 altura_progres w-100">
+                            <div class="progress w-50 altura_progres" role="progressbar" aria-label="Segment one"
+                              aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-danger">50%</div>
+                            </div>
+                            <div class="progress w-30 altura_progres" role="progressbar" aria-label="Segment two"
+                              aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar bg-primary">30%</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-footer text-secondary">
+                        <small>Última actualització fa 3 mins</small>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 pt-4">
-                  <div class="card">
+              </div>
+
+              <div class="row px-1">
+                <div class="col-12 pt-4 px-5">
+                  <div class="card shadow border-2">
                     <div class="card-header fs-4 d-flex align-items-center">
                       <i class="bi bi-clipboard-data pe-2 py-1"></i>
-                      Tráfic
+                      Tràfic
                     </div>
                     <div class="card-body">
                       <table class="w-100 table table-striped">
@@ -314,7 +366,7 @@
                           <li class="page-item disabled">
                             <a class="page-link">Anterior</a>
                           </li>
-                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link bg-secondary text-white" href="#">1</a></li>
                           <li class="page-item">
                             <a class="page-link" href="#">Següent</a>
                           </li>
@@ -323,23 +375,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-
-                </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="row">
-            <div class="col-12 px-0">
-              <div class="fst-italic text-center bg-white py-3">
-                <span>@202X Disseny Interfíces Web </span>
-              </div>
+        <div class="row pt-4">
+          <div class="col-12 px-0">
+            <div class="fst-italic text-center bg-white py-3">
+              <span>@202X Disseny Interfíces Web </span>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 
