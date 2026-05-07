@@ -2,6 +2,7 @@
     --color-blanc: #e8f1f9;
     --color-gris-clar: #e8eaed;
     --color-negre: #212529;
+    --color-roig: #d83646;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 .foto_perfil {
-    width: 132px;
+    width: 130px;
 }
 
 .bg-gris-clar {
@@ -55,4 +56,40 @@ body {
 
 .w-280 {
     width: 280px;
+}
+
+.icona_play {
+    font-size: 5em;
+}
+
+.icona_play:hover {
+    font-size: 7em;
+    color: var(--color-roig) !important;
+    cursor:pointer;
+}
+
+
+@media (max-width: 1199px) {
+  .foto_perfil {
+    width: 104px;
+  }
+}
+
+@media (max-width: 948px) {
+  .foto_perfil {
+    width: 72px;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .foto_perfil {
+    width: 49px;
+  }
+}
+
+@media (max-width: 768px) {
+  .paginacion {
+    width: 100%;
+  }
 }
