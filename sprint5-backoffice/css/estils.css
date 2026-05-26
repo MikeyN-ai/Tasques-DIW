@@ -5,8 +5,40 @@
     --color-roig: #d83646;
 }
 
+@font-face {
+    font-display: block;
+    font-family: bootstrap-icons;
+    src: url("fonts/bootstrap-icons.woff2?e34853135f9e39acf64315236852cd5a") format("woff2"), url("fonts/bootstrap-icons.woff?e34853135f9e39acf64315236852cd5a") format("woff")
+}
+
+/* Fuente Regular */
+/*@font-face {
+    font-family: 'Hind Vadodara';
+    src: url('fonts/Hind_Vadodara/HindVadodara-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}*/
+
+/* Fuente Bold (Negrita) */
+/*@font-face {
+    font-family: 'Hind Vadodara';
+    src: url('fonts/Hind_Vadodara/HindVadodara-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}*/
+
+/* Fuente Italic (Cursiva) */
+/*@font-face {
+    font-family: 'Hind Vadodara';
+    src: url('fonts/MiFuente-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}*/
+
 body {
-    font-family: "Hind Vadodara", sans-serif;
+    font-family: 'Hind Vadodara'
+        /*, sans-serif*/
+    ;
 }
 
 .bg-blau-clar {
@@ -35,7 +67,7 @@ body {
 }
 
 .w-30 {
-    width: 30%;  
+    width: 30%;
 }
 
 .w-15 {
@@ -62,12 +94,12 @@ body {
 .icona_play:hover {
     font-size: 7em;
     color: var(--color-roig) !important;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
 @media (max-width: 768px) {
-  .paginacion {
-    width: 100%;
-  }
+    .paginacion {
+        width: 100%;
+    }
 }
