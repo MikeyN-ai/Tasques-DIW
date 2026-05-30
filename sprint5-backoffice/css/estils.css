@@ -5,20 +5,48 @@
     --color-roig: #d83646;
 }
 
+@font-face {
+    font-display: block;
+    font-family: bootstrap-icons;
+    src: url("fonts/bootstrap-icons.woff2?e34853135f9e39acf64315236852cd5a") format("woff2"), url("fonts/bootstrap-icons.woff?e34853135f9e39acf64315236852cd5a") format("woff")
+}
+
+/* Fuente Regular */
+/*@font-face {
+    font-family: 'Hind Vadodara';
+    src: url('fonts/Hind_Vadodara/HindVadodara-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}*/
+
+/* Fuente Bold (Negrita) */
+/*@font-face {
+    font-family: 'Hind Vadodara';
+    src: url('fonts/Hind_Vadodara/HindVadodara-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}*/
+
+/* Fuente Italic (Cursiva) */
+/*@font-face {
+    font-family: 'Hind Vadodara';
+    src: url('fonts/MiFuente-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}*/
+
 body {
-    font-family: "Hind Vadodara", sans-serif;
+    font-family: 'Hind Vadodara'
+        /*, sans-serif*/
+    ;
 }
 
 .bg-blau-clar {
     background-color: var(--color-blanc);
 }
 
-.foto_perfil {
-    width: 130px;
-}
-
 .bg-gris-clar {
-    background-color: var(--color-gris-clar) !important;
+    background-color: var(--color-gris-clar);
 }
 
 .menu_lateral:hover {
@@ -27,35 +55,36 @@ body {
 }
 
 .w-55 {
-    width: 55% !important;
+    width: 55%;
 }
 
 .w-45 {
-    width: 45% !important;
+    width: 45%;
 }
 
 .w-35 {
-    width: 35% !important;
+    width: 35%;
 }
 
 .w-30 {
-    width: 30% !important;  
+    width: 30%;
 }
 
 .w-15 {
-    width: 15% !important;
+    width: 15%;
 }
 
 .w-10 {
-    width: 10% !important;
+    width: 10%;
 }
 
 .altura_progres {
     height: 25px;
 }
 
-.w-280 {
-    width: 280px;
+.w-205 {
+    margin-top: -0.5em !important;
+    width: 205px;
 }
 
 .icona_play {
@@ -65,31 +94,12 @@ body {
 .icona_play:hover {
     font-size: 7em;
     color: var(--color-roig) !important;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-
-@media (max-width: 1199px) {
-  .foto_perfil {
-    width: 104px;
-  }
-}
-
-@media (max-width: 948px) {
-  .foto_perfil {
-    width: 72px;
-  }
-}
-
-
-@media (max-width: 450px) {
-  .foto_perfil {
-    width: 49px;
-  }
-}
 
 @media (max-width: 768px) {
-  .paginacion {
-    width: 100%;
-  }
+    .paginacion {
+        width: 100%;
+    }
 }
