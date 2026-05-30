@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pràctica BO Selectio</title>
+    <meta name="description" content="Programa de gestió de una tenda anomenada Selectio">
+    <meta name="keywords"
+        content="Productes, Atributs, Families, Ciutats, Usuaris, Clients, Ofertes, Carret, Estadístiques">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <section class="container-fluid">
+        <header class="row header m-0 w-100 z-3">
+            <nav class="navbar navbar-expand-md bg-white">
+                <div class="container-fluid d-flex py-2">
+                    <button class="navbar-toggler btn btn-link border-0 p-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#menuLateral"
+                        aria-controls="menuLateral" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand fw-bold me-0" href="#">
+                        <i class="bi bi-lightbulb fs-6 bg-warning text-white rounded-circle p-2"></i>
+                        <span class="fs-4 ps-1">SELECTIO</span>
+                    </a>
+                    <div class="d-flex align-items-center">
+                        <img src="img/foto_persona.png" alt="Logo Manolo Garibolo" class="rounded-pill logo-user">
+                        <span class="ps-3 fw-medium pe-3 d-none d-md-flex">Manolo Garibolo</span>
+                        <div class="vr border border-black d-none d-md-flex"></div>
+                        <i class="bi bi-box-arrow-right text-primary fs-4 ps-3 d-none d-md-flex"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="row titol-apartat w-100 m-0 z-3">
+            <div class="bg-dark-subtle text-center py-3">
+                <h2 class="fw-bold fs-5 mb-0">Llistat d'usuaris</h2>
+                <span class="small text-secondary">Gestió i manteniment dels usuaris del sistema</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <aside class="col-12 col-md-2 p-0 aside h-100 z-3">
+                <div class="collapse navbar-collapse d-md-block h-100" id="menuLateral">
+                    <div class="list-group list-group-flush w-100 bg-blau-oscur h-100">
+                        <a href="#"
+                            class="list-group-item list-group-item-action bg-blau-oscur pt-3 pb-2 border-0 text-gris d-flex align-items-center menu_lateral"
+                            aria-current="true">
+                            <i class="bi bi-paperclip fs-4 pe-3"></i>
+                            Atributs
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action bg-blau-oscur pt-3 pb-2 border-0 text-gris d-flex align-items-center menu_lateral"
+                            aria-current="true">
+                            <i class="bi bi-cart-fill fs-4 pe-3"></i>
+                            Carrets
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action bg-blau-oscur pt-3 pb-2 border-0 text-gris d-flex align-items-center menu_lateral"
+                            aria-current="true">
+                            <i class="bi bi-person-standing fs-4 pe-3"></i>
+                            Clients
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action bg-blau-oscur pt-3 pb-2 border-0 text-gris d-flex align-items-center menu_lateral"
+                            aria-current="true">
+                            <i class="bi bi-sliders fs-4 pe-3"></i>
+                            Configur.
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action bg-blau-oscur pt-3 pb-2 border-0 text-gris d-flex align-items-center menu_lateral"
+                            aria-current="true">
+                            <i class="bi bi-bag fs-4 pe-3"></i>
+                            <span class="pe-2">Coman.</span>
+                            <span class="badge rounded-pill text-bg-danger">1</span>
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action bg-blau-oscur pt-3 pb-2 border-0 text-gris d-flex align-items-center menu_lateral"
+                            aria-current="true">
+                            <i class="bi bi-bar-chart fs-4 pe-3"></i>
+                            Estadís.
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action bg-blau-oscur pt-3 pb-2 border-0 text-gris d-flex align-items-center menu_lateral"
+                            aria-current="true">
+                            <i class="bi bi-folder fs-4 pe-3"></i>
+                            Famílies
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action bg-blau-oscur pt-3 pb-2 border-0 text-gris d-flex align-items-center menu_lateral"
+                            aria-current="true">
+                            <i class="bi bi-geo-alt fs-4 pe-3"></i>
+                            Localitza.
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action bg-blau-oscur pt-3 pb-2 border-0 text-gris d-flex align-items-center menu_lateral"
+                            aria-current="true">
+                            <i class="bi bi-tag fs-4 pe-3"></i>
+                            Ofertes
+                        </a>
+                        <a href="#"
+                            class="list-group-item list-group-item-action bg-blau-oscur pt-3 pb-2 border-0 text-gris d-flex align-items-center menu_lateral"
+                            aria-current="true">
+                            <i class="bi bi-box-seam fs-4 pe-3"></i>
+                            Productes
+                        </a>
+                        <li class="list-group-item list-group-item-action bg-blau-oscur py-2 border-0 text-gris d-flex align-items-center seleccionat"
+                            aria-current="true">
+                            <i class="bi bi-person fs-4 ps-0 m-0 pe-3 py-1"></i>
+                            Usuaris
+                        </li>
+                        <a href="#"
+                            class="list-group-item list-group-item-action bg-blau-oscur pt-3 pb-2 border-0 text-gris d-flex d-md-none align-items-center menu_lateral"
+                            aria-current="true">
+                            <i class="bi bi-box-arrow-right fs-4 pe-3"></i>
+                            Exit
+                        </a>
+                    </div>
+
+                    <!--<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link w-100" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul> -->
+
+                </div>
+            </aside>
+            <main class="col-12 col-md-10 contingut">
+                <div class="container-fluid px-1 pt-4">
+                    <form action="" class="bg-blau-clar rounded m-0">
+                        <section class="row px-2 pt-3 m-0">
+                            <div class="col-12 col-md-6 col-lg-4 pb-3">
+                                <label for="nom" class="form-label fw-medium">Nom</label>
+                                <input type="text" class="form-control  border border-dark-subtle border-2" id="nom"
+                                    placeholder="Filtrar per nom ..." minlength="3" maxlength="50">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 pb-3">
+                                <label for="nom" class="form-label fw-medium">Cognoms</label>
+                                <input type="text" class="form-control border border-dark-subtle border-2" id="cognom"
+                                    placeholder="Filtrar per cognoms ..." minlength="3" maxlength="50">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 pb-3">
+                                <label for="nom" class="form-label fw-medium">Dni</label>
+                                <input type="text" class="form-control border border-dark-subtle border-2" id="dni"
+                                    placeholder="Filtrar per dni ..." minlength="3" maxlength="9">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 pb-3">
+                                <label for="nom" class="form-label fw-medium">Email</label>
+                                <input type="text" class="form-control border border-dark-subtle border-2" id="email"
+                                    placeholder="Filtrar per email ..." minlength="3" maxlength="100">
+                            </div>
+                        </section>
+                        <section class="row px-2 m-0 pb-3">
+                            <div class="col-12">
+                                <div class="w-100 d-block d-md-flex align-items-center justify-content-end">
+                                    <button type="button" class="btn btn-warning text-light me-2 mb-2 mb-md-0 tot btn-negre-h">
+                                        <i class="bi bi-funnel"></i>
+                                        Filtrar
+                                    </button>
+                                    <button type="button" class="btn btn-secondary text-light tot btn-negre-h">
+                                        <i class="bi bi-trash"></i>
+                                        Netejar
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </form>
+                    <section class="row">
+                        <div class="col-12">
+                            <div class="d-block d-md-flex justify-content-between align-items-center bg-gris rounded-top mt-3 p-2">
+                                <button type="button" class="btn btn-dark py-1 py-md-3 me-1 mb-2 mb-md-0 btn-negre-h tot order-0 order-md-1 border-1 border-white">
+                                    <i class="bi bi bi-plus-circle"></i>
+                                    Crear
+                                </button>
+                                <div class="input-group w-auto border border-white rounded ms-md-1 order-1 order-md-0">
+                                    <div class="form-floating w-auto">
+                                        <select class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option selected>Tria una opció</option>
+                                            <option value="1">Eliminar</option>
+                                        </select>
+                                        <label for="floatingSelect">Accions en lot</label>
+                                    </div>
+                                    <button class="btn bg-blau-oscur-boto text-white btn-negre-h limitar-button" type="button">
+                                        <i class="bi bi-check-circle"></i>
+                                        Aplicar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="row">
+                        <div>
+                            <table class="table table-striped">
+                                <thead class="text-blau-oscur px-0">
+                                    <tr class="text-center border-bottom-1 border-secondary">
+                                        <th scope="col" class="bg-secondary-subtle">
+                                            <input class="form-check-input border border-secondary-subtle"
+                                                type="checkbox" value="">
+                                        </th>
+                                        <th scope="col" class="text-blau-oscur bg-secondary-subtle">ID</th>
+                                        <th scope="col" class="text-blau-oscur bg-secondary-subtle">Nom</th>
+                                        <th scope="col" class="text-blau-oscur bg-secondary-subtle">DNI/NIF</th>
+                                        <th scope="col" class="text-blau-oscur bg-secondary-subtle">Telèfon</th>
+                                        <th scope="col" class="text-blau-oscur bg-secondary-subtle">Correu</th>
+                                        <th scope="col" class="text-blau-oscur bg-secondary-subtle">Accions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="">
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1001</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1002</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1003</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1004</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1005</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1006</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1007</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1008</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1009</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1010</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1011</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1012</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1013</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1014</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td data-cell="Seleccionar: ">
+                                            <input class="form-check-input border-secondary-subtle" type="checkbox"
+                                                value="">
+                                        </td>
+                                        <td class="fw-bold" data-cell="ID: ">1015</td>
+                                        <td data-cell="Nom: ">Juan Palomo</td>
+                                        <td data-cell="DNI/CIF: ">68458699G</td>
+                  
+
+                                        <td data-cell="Telèfon: ">639639639</td>
+                                        <td data-cell="Correu: ">carlos2@gmail.com</td>
+                                        <td class="d-flex justify-content-center">
+                                            <a href="#" class="text-primary">
+                                                <i class="bi bi-pencil-square fs-5 pe-3"></i>
+                                            </a>
+                                            <a href="#" class="text-dark">
+                                                <i class="bi bi-eye fs-5 px-1"></i>
+                                            </a>
+                                            <a href="#" class="text-danger">
+                                                <i class="bi bi-trash fs-5 ps-3"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="row">
+                        <div class="col-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link text-dark border border-secondary-subtle" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link bg-dark text-white border border-secondary-subtle" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link text-dark border border-secondary-subtle" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link text-dark border border-secondary-subtle" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link text-dark border border-secondary-subtle" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </section>
+</body>
+
+</html>

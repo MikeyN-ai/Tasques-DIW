@@ -1,0 +1,123 @@
+:root {
+    --blau-oscur: #1e293b;
+    --dark: #212529;
+    --blau-oscur-boto: #47488e;
+    --text-menu-lateral: #d1d5db;
+    --opcio-seleccionada: #47488e;
+    --opcio-border-seleccionada: #99a6ee;
+    --blau-filtre: #bcd0ea;
+    --gris-taula: #b5b7b9;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter/Inter-VariableFont_opsz\,wght.ttf'), format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf'), format("truetype");
+    font-style: italic;
+}
+
+* {
+    font-family: 'Inter';
+}
+
+.bg-blau-oscur {
+    background-color: var(--blau-oscur) !important;
+}
+
+.bg-blau-oscur-boto {
+    background-color: var(--blau-oscur-boto);
+}
+
+.text-blau-oscur {
+    color: var(--blau-oscur-boto) !important;
+}
+
+.bg-blau-clar {
+    background-color: var(--blau-filtre);
+}
+
+.bg-gris {
+    background-color: var(--gris-taula);
+}
+
+.text-gris {
+    color: var(--text-menu-lateral) !important;
+}
+
+.seleccionat,
+.menu_lateral:hover {
+    background-color: var(--opcio-seleccionada) !important;
+}
+
+.seleccionat {
+    border-left: 5px solid var(--text-menu-lateral) !important;
+}
+
+.logo-user {
+    width: 64px;
+}
+
+.btn-negre-h:hover {
+    background-color: var(--dark) !important;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.titol-apartat {
+    position: fixed;
+    left: 0;
+    top: 88px;
+}
+
+.aside {
+    position: fixed;
+    left: 0;
+    top: 168px;
+}
+
+.contingut {
+    position: relative;
+    left: 16.7%;
+    top: 168px;
+}
+
+@media (max-width:768px) {
+    thead th {
+        display: none;
+    }
+
+    tbody td {
+        display: block;
+    }
+
+    tbody td::before {
+        content: attr(data-cell);
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    .tot {
+        width: 100%;
+    }
+
+    .contingut {
+        left: 0;
+    }
+
+    .aside {
+        position: sticky;
+    }
+
+    .limitar-button {
+        width: 55%;
+    }
+}
