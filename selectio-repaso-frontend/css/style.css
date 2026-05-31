@@ -1,0 +1,58 @@
+:root {
+    --blau-clar: #e1ebf6;
+    --negre: #000;
+    --blau-seleccionar: #bdd8f4;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url("fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+}
+
+* {
+    font-family: 'SpaceGrotesk';
+}
+
+.text-primera-targeta {
+    font-size: 3.7em;
+}
+
+.bg-blau-clar {
+    background-color: var(--blau-clar);
+}
+
+.bg-celeste, .opcions_menu:hover {
+    background-color: var(--blau-seleccionar);
+}
+
+.list-group-item-action:hover {
+    color: var(--negre) !important;
+}
+
+@media (max-width:1200px) {
+    .sombra-nav {
+        box-shadow: 0px 0px 6px 0px #606060;
+    }
+
+    .nav-despelgable {
+        position: absolute;
+        left: 0;
+        top: 60px;
+        width: 100%;
+    }
+
+    .tot {
+        width: 100%;
+    }
+}
+
+@media (max-width:900px) {
+    .nav-despelgable {
+        top: 100px;
+    }
+
+    .tot_oferta {
+        width: 100% !important;
+    }
+}
